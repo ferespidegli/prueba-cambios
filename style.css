@@ -296,6 +296,23 @@ section#sec__contacto {
     height: 150px;
 }
 
+#menu * { list-style:none;}
+#menu li{ line-height:180%;}
+#menu li a{color:#222; text-decoration:none;}
+#menu li a:before{ content:"\025b8"; color:#ddd; margin-right:4px;}
+#menu input[name="list"] {
+	position: absolute;
+	left: -1000em;
+	}
+#menu label:before{ content:"\025b8"; margin-right:4px;}
+#menu input:checked ~ label:before{ content:"\025be";}
+#menu .interior{display: none;}
+#menu input:checked ~ ul{display:block;}
+
+b {
+    color: rgb(255, 0, 119);
+    font-size: 20px;
+}
 
 }
 
@@ -620,7 +637,8 @@ section#sec__contacto {
 
 /*comienzo estilos del aside*/
 .aside__image {
-    width: 220px;
+    width: 200px;
+    height: 200px;
     padding-left: 50px;
     
 }
@@ -655,6 +673,7 @@ section#sec__contacto {
 #menu input:checked ~ ul{display:block;}
 
 b {
+    color: rgb(255, 0, 119);
     font-size: 20px;
 }
 
