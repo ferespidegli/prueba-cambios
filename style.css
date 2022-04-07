@@ -5,10 +5,10 @@
    
 }
 
-.aside__image {
-    width: 200px;
-    height: 150px;
-}
+
+
+/*inicio estilos vista escritorio*/
+
 
 @media screen and (min-width:768px) {
 
@@ -290,7 +290,20 @@ section#sec__contacto {
 
 }
 
+
+.aside__image {
+    width: 200px;
+    height: 150px;
 }
+
+
+}
+
+/*fin estilos para escitorio*/
+
+
+/*inicio estilos first mobile*/
+
 
 @media screen and (max-width: 767px) {
 
@@ -581,6 +594,7 @@ section#sec__ejercicios {
    
     
 }
+/* inicio estilos pagina contacto*/
     
 #menu__contacto {
     display: grid;
@@ -601,5 +615,52 @@ section#sec__contacto {
     
 }
 
+/* fin estilos pagina contacto*/
+
+
+/*comienzo estilos del aside*/
+.aside__image {
+    width: 220px;
+    padding-left: 50px;
+    
+}
+
+.titulo__aside {
+
+    text-align: center;
+    color: red;
 
 }
+
+.aside__link {
+    font-size: 25px;
+    color: rgb(255, 0, 119);
+    
+}
+
+/*fin estilos del aside*/
+
+
+#menu * { list-style:none;}
+#menu li{ line-height:180%;}
+#menu li a{color:#222; text-decoration:none;}
+#menu li a:before{ content:"\025b8"; color:#ddd; margin-right:4px;}
+#menu input[name="list"] {
+	position: absolute;
+	left: -1000em;
+	}
+#menu label:before{ content:"\025b8"; margin-right:4px;}
+#menu input:checked ~ label:before{ content:"\025be";}
+#menu .interior{display: none;}
+#menu input:checked ~ ul{display:block;}
+
+b {
+    font-size: 20px;
+}
+
+
+
+}
+
+
+/*fin estilos first mobile*/

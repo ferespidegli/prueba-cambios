@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale_1.0"/>
+    
 </head>
 <body>
     <div id="grilla">
@@ -48,38 +48,35 @@
     
         <section id="preguntas">
             <h2 class="preguntas__titulo">Preguntas Frecuentes</h2> 
-            <ul class="preguntas__titulo--lista">
-                <li>¿En que me beneficia llevar una Dieta Saludable?
-                    <br>
-                    <br>
-                    <ul>
-                        <li class="pregunta__titulos--listaDesplegable">Disminución del riesgo de padecer enfermedades cardiovasculares a largo plazo, ayudando a reducir el colesterol (LDL).</li>
-                        <li>Presión arterial en niveles normales.</li>
-                        <li>Reducción del deterioro de la memoria y otras funciones cerebrales.</li>
-                        <li>Se obtiene la energía necesaria para realizar las actividades cotidianas</li>
-                        <li>Mejora el sistema inmunológico.</li>
-                        <li>El consumo adecuado de calcio fortalece los huesos y evita la osteoporosis.</li>
+            <!--
+            
+                       
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
                     </ul>
                 </li>
                 <br>
                 <br>
     
-                <li>¿Como Trabajamos?
+                <li>
                     <br>
                     <br>
                     <ul>
-                        <li>Planes alimentarios personalizados</li>
-                        <li>Educación alimentaria.</li>
+                        <li></li>
+                        <li></li>
                     </ul>
                 </li>
                 <br>
                 <br>
     
-                <li>¿Que sucede en la primer consulta?
+                <li>
                     <br>
                     <br>
                     <ul>
-                        <li>En la primer consulta el profesional evaluará conjuntamente con el paciente:</li>
+                        <li></li>
                         <li>La motivación para cambiar, los tratamientos que realizó antes: cuáles les resultaron y cuáles no, la historia de peso, factores causales.</li>
                         <li>La conducta alimentaria, las preferencias del paciente, evaluará su estilo de vida, problemas de salud y medicación que toma.</li>
                         <li>Tomarà medidas antropomètricas: peso, altura, circunferencia abdominal y de cintura, circunferencia de cuello, medición de masa grasa y masa muscular.</li>
@@ -108,33 +105,67 @@
                     </ul>
                 </li> 
             </ul>
-          
+            -->
        
-    
+            <ul id="menu">
+                <li><input type="checkbox" name="list" id="nivel1-1"><label for="nivel1-1">¿En que me beneficia llevar una Dieta Saludable?</label>
+                    <ul class="interior">
+                        <li><b>D</b>isminución del riesgo de padecer enfermedades cardiovasculares a largo plazo, ayudando a reducir el colesterol (LDL).
+                        </li>
+                        <li>Presión arterial en niveles normales.</li>
+                        
+                        <li>Reducción del deterioro de la memoria y otras funciones cerebrales.</li>
+                        
+                        <li>Mejora el sistema inmunológico.</li>
+                        
+                        <li>El consumo adecuado de calcio fortalece los huesos y evita la osteoporosis.</li>
+                    </ul>   
+                </li>
+                  
+                <li><input type="checkbox" name="list" id="nivel1-2" checked=""><label for="nivel1-2">¿Como Trabajamos?</label>
+                    <ul class="interior">
+                        <li>Educación alimentaria.</li>
+                    </ul>
+                </li>
+
+                <li><input type="checkbox" name="list" id="nivel1-3" checked=""><label for="nivel1-3">¿Que sucede en la primer consulta?</label>
+                        <ul class="interior">
+                            <li>En la primer consulta el profesional evaluará conjuntamente con el paciente:</li>
+                </li>
+                   
+                
+            </ul>
+                       
+                      
+            
         </section>
 
+
+
         
-        <aside class="border">
-            <h1>Te puede interesar</h1>
-            <img class="aside__image" src="etiquetado.jpg" alt="Logos etiquetas">
-            <li><a href="https://www.argentina.gob.ar/justicia/derechofacil/leysimple/salud/ley-de-etiquetado-frontal" target="_blank" rel="noopener">Ley de etiquetado frontal</a></li>
-            <br>
-            <br>
-            <br>            
-            <img class="aside__image" src="saludables bbc.jpg" alt="Logos etiquetas">            
-            <li><a href="https://www.bbc.com/mundo/noticias-53838500" target="_blank" rel="noopener">10 alimentos saludables para tener siempre a mano</a></li>
-            <br>
-            <br>
-            <br>            
-            <img class="aside__image" src="dietasdemoda.jpg" alt="dietas de moda">
-            <li><a href="https://www.clikisalud.net/cuales-los-peligros-seguir-las-dietas-moda/"></a>Los peligros de seguir las dietas de moda</li>
-            <br>
-            <br>
-            <img class="aside__image" src="agua.jpg" alt="niño bebiendo">
-            <li><a href="https://www.healthychildren.org/Spanish/healthy-living/nutrition/Paginas/Choose-Water-for-Healthy-Hydration.aspx"></a>¿Porque los niños deben elegir Agua?</li>
-            <br>
-            <br>
-            <br>
+        <aside>
+            <h1 class="titulo__aside">Te puede interesar</h1>
+            <ul>
+                <img class="aside__image" src="etiquetado.jpg" alt="Logos etiquetas">
+                <li class="aside__link"><a href="https://www.argentina.gob.ar/justicia/derechofacil/leysimple/salud/ley-de-etiquetado-frontal" target="_blank" rel="noopener">Ley de etiquetado frontal</a></li>
+                <br>
+                <br>
+                <br>            
+                <img class="aside__image" src="saludables bbc.jpg" alt="Logos etiquetas">            
+                <li class="aside__link"><a href="https://www.bbc.com/mundo/noticias-53838500" target="_blank" rel="noopener">10 alimentos saludables para tener siempre a mano</a></li>
+                <br>
+                <br>
+                <br>            
+                <img class="aside__image" src="dietasdemoda.jpg" alt="dietas de moda">
+                <li class="aside__link"><a href="https://www.clikisalud.net/cuales-los-peligros-seguir-las-dietas-moda/" target="_blank" rel="noopener">Los peligros de seguir las dietas de moda</a></li>
+                <br>
+                <br>
+                <img class="aside__image" src="agua.jpg" alt="niño bebiendo">
+                <li class="aside__link"><a href="https://www.healthychildren.org/Spanish/healthy-living/nutrition/Paginas/Choose-Water-for-Healthy-Hydration.aspx" target="_blank" rel="noopener">¿Porque los niños deben elegir Agua?</a></li>
+                <br>
+                <br>
+                <br>
+            </ul>
         </aside>
 
         <footer class="border">
