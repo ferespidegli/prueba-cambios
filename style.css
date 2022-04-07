@@ -321,6 +321,7 @@ b {
 
 /*inicio estilos first mobile*/
 
+/*inicio grid mobile*/
 
 @media screen and (max-width: 767px) {
 
@@ -342,45 +343,10 @@ b {
     background-color:beige ;
         
 }
-li.naver__sup {
-    color: white;
-    display: inline-block;
-
-    
-    
-}
 
 
-i {
-    font-size: 60px;
-}
+/*inicio header para todas las paginas*/
 
-a.menu__principal {
-    font-size: 20px;
-}
-
-
-
-.preguntas__titulo {
-    text-align: center;
-    color: red;
-}
-
-
-#titulo {
-    font-size: 20px;
-    color: rgb(255, 0, 119);
-}
-    
-ul.menu {
-    text-decoration: none;
-}
-    
-.nav{
-    font-size: 30px;
-    color: white;
-}
-    
 header {
     grid-area: header;
     background-image: url(frutas.jpg);
@@ -388,6 +354,122 @@ header {
     text-align: center;
            
 }
+
+#titulo {
+    font-size: 20px;
+    color: rgb(255, 0, 119);
+}
+
+/*fin header para todas las paginas*/
+
+/*inicio nav para todas las paginas*/
+
+nav {
+	margin: none;
+
+	position: relative;
+	width: auto;
+	height: 50px;
+	background-color: beige;
+	border-radius: 8px;
+	font-size: 0;
+    text-align: left;
+}
+nav a {
+	line-height: 50px;
+	height: 100%;
+	font-size: 12px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+a:nth-child(1) {
+	width: 40px;
+}
+a:nth-child(2) {
+	width: 110px;
+}
+a:nth-child(3) {
+	width: 100px;
+}
+a:nth-child(4) {
+	width: 160px;
+}
+a:nth-child(5) {
+	width: 120px;
+}
+a:nth-child(6) {
+	width: 120px
+}
+nav .start-home, a:nth-child(1):hover.animation {
+	width: 40px;
+	left: 0;
+	background-color: #1abc9c;
+}
+nav .start-programas, a:nth-child(2):hover~.animation {
+	width: 110px;
+	left: 100px;
+	background-color: #e74c3c;
+}
+nav .start-pilares, a:nth-child(3):hover~.animation {
+	width: 100px;
+	left: 210px;
+	background-color: #3498db;
+}
+nav .start-ejercicios, a:nth-child(4):hover~.animation {
+	width: 160px;
+	left: 310px;
+	background-color: #9b59b6;
+}
+nav .start-contactanos, a:nth-child(5):hover~.animation {
+	width: 120px;
+	left: 470px;
+	background-color: #e67e22;
+}
+
+nav .start-recetas, a:nth-child(6):hover~.animation {
+	width: 100px;
+	left: 600px;
+	background-color: black;
+}
+
+
+
+
+
+/*fin nav para todas las paginas*/
+
+/*inicio estilos menu inicio*/
+
+i {
+    font-size: 40px;
+}
+
+.menu__principal {
+
+    font-size: 30px;
+}
+
+/*inicio estilos menu inicio*/
+
+.preguntas__titulo {
+    text-align: center;
+    color: red;
+}
+
     
 footer {
     grid-area: footer;
@@ -431,7 +513,7 @@ section#preguntas {
     
 nav {
     grid-area: nav;
-    background-color: rgb(255, 0, 119);
+    
        
 }
     
@@ -494,38 +576,8 @@ button:hover{
     color:#fff;
 }
     
-.nav__menu {
-    display: block;
-}
     
-ul.nav__menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(255, 0, 119);
-        
-}
-    
-li.nav__menu {
-    float: left;
-        
-    
-}
-    
-li.nav__menu {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-}
-    
-li.nav__menu:hover {
-    background-color: rgb(187, 150, 180);
-}
-    
+
     
 #menu__pilar {
     display: grid;
@@ -637,9 +689,9 @@ section#sec__contacto {
 
 /*comienzo estilos del aside*/
 .aside__image {
-    width: 200px;
-    height: 200px;
-    padding-left: 50px;
+    width: 180px;
+    height: 180px;
+    padding-left: 70px;
     
 }
 
@@ -672,7 +724,7 @@ section#sec__contacto {
 #menu .interior{display: none;}
 #menu input:checked ~ ul{display:block;}
 
-b {
+.preguntas {
     color: rgb(255, 0, 119);
     font-size: 20px;
 }
