@@ -1,0 +1,605 @@
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    
+   
+}
+
+.aside__image {
+    width: 200px;
+    height: 150px;
+}
+
+@media screen and (min-width:768px) {
+
+#grilla {
+    display: grid;
+    grid-template-areas: 
+        "nav header header"
+        "nav pilares externos"
+        "nav programas externos"
+        "nav recetas externos"
+        "nav ejercicios externos"
+        "nav contactanos externos"
+        "nav preguntas externos"
+        "nav footer footer";
+    grid-template-rows: 600px 100px 100px 100px 100px 100px auto;
+    grid-template-columns: 15% 65% 20%;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    background-color: beige;
+    
+}
+
+#titulo {
+    font-size: 60px;
+    color: rgb(255, 0, 119);
+}
+
+ul.menu {
+    text-decoration: none;
+}
+
+.nav{
+    font-size: 30px;
+    color: white;
+}
+
+header {
+    grid-area: header;
+    background-image: url(frutas.jpg);
+    background-size: cover;
+    text-align: center;
+       
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: rgb(255, 0, 119);
+   
+}
+
+section#pilares {
+    grid-area: pilares;
+    
+}
+
+section#programas {
+    grid-area: programas;
+    
+}
+
+section#recetas {
+    grid-area: recetas;
+    
+}
+
+section#ejercicios {
+    grid-area: ejercicios;
+    
+
+    
+}
+
+section#contactanos {
+    grid-area: contactanos; 
+   
+}
+
+section#preguntas {
+    grid-area: preguntas;
+    
+}
+
+nav {
+    grid-area: nav;
+    background-color: rgb(255, 0, 119);
+   
+}
+
+aside {
+    grid-area: externos;
+    
+}
+a:link, a:visited,  a:hover, a:active
+{
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+}
+i {
+    color: rgb(255, 0, 119);
+    margin: 20px;
+    font-size: 60px;
+    
+    
+}
+
+a.menu__principal {
+    font-size: 50px;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    font-family:'Montserrat',sans-serif;transition:all .3s;
+    border-bottom:2px solid #bebed2;
+}
+input:focus{
+    border-bottom:2px solid #78788c;
+}
+p:before{
+    
+    content:attr(type);
+    
+    display:block;
+    
+    margin:28px 0 0;
+    
+    font-size:14px;
+    
+    color:#5a5a5a;
+
+}
+button{
+    float:right;
+    padding:8px 12px;
+    margin:8px 0 0;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid #78788c;
+    background:0;
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s;
+}
+button:hover{
+    background:#78788c;
+    color:#fff;
+}
+
+.nav__menu {
+    display: block;
+}
+
+ul.nav__menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(255, 0, 119);
+    
+}
+
+li.nav__menu {
+    float: left;
+    
+
+}
+
+li.nav__menu {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+li.nav__menu:hover {
+    background-color: rgb(187, 150, 180);
+}
+
+
+#menu__pilar {
+    display: grid;
+    grid-template-areas: 
+        "nav header header"
+        "nav sec_pilar externos"
+        "nav footer footer";
+    grid-template-rows: 600px 600px auto;
+    grid-template-columns: 15% 80% 5%;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    background-color: beige;
+    
+}
+
+section#sec__pilar {
+    grid-area: sec_pilar;
+
+}
+
+#menu__programas {
+    display: grid;
+    grid-template-areas: 
+        "nav header header"
+        "nav sec_programas externos"
+        "nav footer footer";
+    grid-template-rows: 600px 800px auto;
+    grid-template-columns: 15% 80% 5%;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    background-color: beige;
+    
+}
+
+section#sec__programas {
+    grid-area: sec_programas;
+
+}
+#menu__recetas {
+    display: grid;
+    grid-template-areas: 
+        "nav header header"
+        "nav sec_recetas externos"
+        "nav footer footer";
+    grid-template-rows: 600px auto auto;
+    grid-template-columns: 15% 80% 5%;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    background-color: beige;
+    
+}
+
+section#sec__recetas {
+    grid-area: sec_recetas;
+
+}
+
+#menu__ejercicios {
+    display: grid;
+    grid-template-areas: 
+        "nav header header"
+        "nav sec_ejercicios externos"
+        "nav footer footer";
+    grid-template-rows: 600px auto auto;
+    grid-template-columns: 15% 80% 5%;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    background-color: beige;
+    
+}
+
+section#sec__ejercicios {
+    grid-area: sec_ejercicios;
+
+}
+
+#menu__contacto {
+    display: grid;
+    grid-template-areas: 
+        "nav header header"
+        "nav sec_contacto externos"
+        "nav footer footer";
+    grid-template-rows: 600px auto auto;
+    grid-template-columns: 15% 80% 5%;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    background-color: beige;
+    
+}
+
+section#sec__contacto {
+    grid-area: sec_contacto;
+
+}
+
+}
+
+@media screen and (max-width: 767px) {
+
+#grilla {
+    display: grid;
+    grid-template-areas: 
+        "nav nav nav"
+        "header header header"
+        "pilares pilares pilares"
+        "programas programas programas"
+        "recetas recetas recetas"
+        "ejercicios ejercicios ejercicios"
+        "contactanos contactanos contactanos"
+        "preguntas preguntas preguntas"
+        "externos externos externos"
+        "footer footer footer";
+    grid-template-rows: 60px 200px 100px 100px 100px 100px 100px auto;
+    grid-template-columns: auto;
+    background-color:beige ;
+        
+}
+li.naver__sup {
+    color: white;
+    display: inline-block;
+
+    
+    
+}
+
+
+i {
+    font-size: 60px;
+}
+
+a.menu__principal {
+    font-size: 20px;
+}
+
+
+
+.preguntas__titulo {
+    text-align: center;
+    color: red;
+}
+
+
+#titulo {
+    font-size: 20px;
+    color: rgb(255, 0, 119);
+}
+    
+ul.menu {
+    text-decoration: none;
+}
+    
+.nav{
+    font-size: 30px;
+    color: white;
+}
+    
+header {
+    grid-area: header;
+    background-image: url(frutas.jpg);
+    background-size: cover;
+    text-align: center;
+           
+}
+    
+footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: rgb(255, 0, 119);
+       
+}
+    
+section#pilares {
+    grid-area: pilares;
+    
+    
+        
+}
+    
+section#programas {
+    grid-area: programas;
+        
+}
+    
+section#recetas {
+    grid-area: recetas;
+        
+}
+    
+section#ejercicios {
+    grid-area: ejercicios; 
+        
+}
+    
+section#contactanos {
+    grid-area: contactanos; 
+       
+}
+    
+section#preguntas {
+    grid-area: preguntas;
+    font-size: 15px;
+        
+}
+    
+nav {
+    grid-area: nav;
+    background-color: rgb(255, 0, 119);
+       
+}
+    
+aside {
+    grid-area: externos;
+        
+}
+a:link, a:visited,  a:hover, a:active
+{
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+}
+i {
+    color: rgb(255, 0, 119);
+    margin: 20px;
+        
+}
+    
+input{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    font-family:'Montserrat',sans-serif;transition:all .3s;
+    border-bottom:2px solid #bebed2;
+}
+input:focus{
+    border-bottom:2px solid #78788c;
+    }
+p:before{
+        
+    content:attr(type);
+        
+    display:block;
+        
+    margin:28px 0 0;
+        
+    font-size:14px;
+        
+    color:#5a5a5a;
+    
+}
+button{
+    float:right;
+    padding:8px 12px;
+    margin:8px 0 0;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid #78788c;
+    background:0;
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s;
+}
+button:hover{
+    background:#78788c;
+    color:#fff;
+}
+    
+.nav__menu {
+    display: block;
+}
+    
+ul.nav__menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(255, 0, 119);
+        
+}
+    
+li.nav__menu {
+    float: left;
+        
+    
+}
+    
+li.nav__menu {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+    
+li.nav__menu:hover {
+    background-color: rgb(187, 150, 180);
+}
+    
+    
+#menu__pilar {
+    display: grid;
+    grid-template-areas: 
+        "nav nav nav"
+        "header header header"
+        "sec_pilar sec_pilar sec_pilar"
+        "footer footer footer";
+    grid-template-rows: 80px 200px auto;
+    grid-template-columns: auto;
+    background-color: beige;
+        
+}
+    
+section#sec__pilar {
+    grid-area: sec_pilar;
+    
+}
+    
+#menu__programas {
+    display: grid;
+    grid-template-areas: 
+        "nav nav nav"
+        "header header header"
+        "sec_programas sec_programas sec_programas"
+        "footer footer footer";
+    grid-template-rows: 80px 200px auto;
+    grid-template-columns: auto;
+    background-color: beige;
+        
+}
+    section#sec__programas {
+        grid-area: sec_programas;
+    
+}
+
+
+#menu__recetas {
+display: grid;
+grid-template-areas: 
+    "nav nav nav"
+    "header header header"
+    "sec_recetas sec_recetas sec_recetas"
+    "footer footer footer";
+grid-template-rows: 80px 200px auto;
+grid-template-columns: auto;
+background-color: beige;
+
+}
+    section#sec__recetas {
+grid-area: sec_recetas;
+}
+
+
+img {
+    height: 250px;
+    width: 250x;
+   
+    
+}
+    
+    
+#menu__ejercicios {
+    display: grid;
+    grid-template-areas: 
+        "nav nav nav"
+        "header header header"
+        "sec__ejercicios sec__ejercicios sec__ejercicios"
+        "footer footer footer";
+    grid-template-rows: 80px 200px auto;
+    grid-template-columns: auto;
+    background-color: beige;
+        
+}
+
+
+    
+section#sec__ejercicios {
+    grid-area: sec__ejercicios;
+    font-size: 10px;
+    
+   
+   
+    
+}
+    
+#menu__contacto {
+    display: grid;
+    grid-template-areas: 
+        "nav nav nav"
+        "header header header"
+        "sec_contacto sec_contacto sec_contacto"
+        "footer footer footer";
+    grid-template-rows: 80px 200px auto auto;
+    grid-template-columns: auto;
+    background-color: beige;
+        
+}
+    
+section#sec__contacto {
+    grid-area: sec_contacto;
+    margin: auto;
+    
+}
+
+
+}
