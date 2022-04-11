@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <title>Jessica Espinoza Deglise</title>
     <link rel="stylesheet" href="style.css">    
@@ -10,144 +10,172 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    
 </head>
 <body>
-    <div id="grilla">
-        <header>
-            <h1 id="titulo" class="titulo">Licenciada Jessica Espinoza Deglise | Nutricionista</h1>
-        </header>
-
-        <nav>
-            <ul id="menu__naver--sup">
-                <li class="naver__sup"><a href="index.html">Inicio</a></li>
-                <li class="naver__sup"><a href="Contactanos.html">Contactanos</a></li>
-                      
-            </ul>       
-        </nav>
-
-        <section id="pilares" class="fa-6x"><a class="menu__principal" href="Nuestros Pilares.html">
-            <i class="fa-solid fa-building-columns"></i>Nuestros Pilares</a>
-        </section>
-
-        <section id="programas" class="fa-6x"><a class="menu__principal" href="Programas.html">
-            <i class="fa-solid fa-clipboard-check"></i>Programas</a>
-        </section>
-
-        <section id="recetas" class="fa-6x"><a class="menu__principal" href="Recetas Saludables.html">                
-            <i  class="fa-solid fa-plate-wheat"></i>Recetas</a>
-        </section>
-
-        <section id="ejercicios" class="fa-6x"><a class="menu__principal" href="Rutina de ejercicios.html">
-            <i  class="fa-solid fa-dumbbell"></i>Rutinas de Ejercicios</a>
-        </section>
-
-        <section id="contactanos" class="fa-6x"><a class="menu__principal" href="Contactanos.html">
-            <i  class="fa-solid fa-envelopes-bulk"></i>Contactanos</a>
-        </section>
     
-        <section id="preguntas">
-            <h2 class="preguntas__titulo">Preguntas Frecuentes</h2> 
-            <!--
-            
-                <li>
-                    <br>
-                    <br>
-                    <ul>
-                        <li></li>
-                    </ul>
-                </li> 
-            </ul>
-            -->
-       
-            <ul id="menu">
-                <li><input type="checkbox" name="list" id="nivel1-1"><label for="nivel1-1">¿En que me beneficia llevar una Dieta Saludable?</label>
-                    <ul class="interior">
-                        <li><b>D</b>isminución del riesgo de padecer enfermedades cardiovasculares a largo plazo, ayudando a reducir el colesterol (LDL).
-                        </li>
-                        <li><b>P</b>resión arterial en niveles normales.</li>
-                        
-                        <li><b>R</b>educción del deterioro de la memoria y otras funciones cerebrales.</li>
-                        
-                        <li><b>M</b>el sistema inmunológico.</li>
-                        
-                        <li><b>E</b>consumo adecuado de calcio fortalece los huesos y evita la osteoporosis.</li>
-                    </ul>   
-                </li>
-                  
-                <li><input type="checkbox" name="list" id="nivel1-2"><label for="nivel1-2">¿Como Trabajamos?</label>
-                    <ul class="interior">
-                        <li><b>E</b>ducación alimentaria.</li>
-                    </ul>
-                </li>
-
-                <li><input type="checkbox" name="list" id="nivel1-3"><label for="nivel1-3">¿Que sucede en la primer consulta?</label>
-                        <ul class="interior">
-                            <li><b>E</b>n la primer consulta el profesional evaluará conjuntamente con el paciente:</li>
-                            <li><b>L</b>a motivación para cambiar, los tratamientos que realizó antes: cuáles les resultaron y cuáles no, la historia de peso, factores causales.</li>
-                            <li><b>L</b>a conducta alimentaria, las preferencias del paciente, evaluará su estilo de vida, problemas de salud y medicación que toma.</li>
-                            <li><b>T</b>omarà medidas antropomètricas: peso, altura, circunferencia abdominal y de cintura, circunferencia de cuello, medición de masa grasa y masa muscular.</li>
-                            <li><b>C</b>on toda esta información el profesional acordará con el paciente un plan de tratamiento específico y personalizado para lograr resultados efectivos</li>
-                        </ul>
-                </li>
-
-                <li><input type="checkbox" name="list" id="nivel1-4"><label for="nivel1-4">¿Cada cuanto debo asistir a las consultas?</label>
-                        <ul class="interior">
-                            <li><b>E</b>so depende de cada paciente.</li>
-                            <li><b>E</b>n general recomendamos que el primer mes el paciente asista una vez por semana, salvo que sean pacientes del interior o que viajan frecuentemente por su trabajo.</b></li>
-                            <li><b>P</b>osteriormente puede acordarse una consulta cada 15 días.</li>
-                            <li><b>T</b>ambién contamos con la modalidad online para personas que no pueden asistir personalmente.</li>
-                        </ul>
-                <li><input type="checkbox" name="list" id="nivel1-5"><label for="nivel1-5">¿Con que Obras Sociales Trabajan?</label>
-                        <ul class="interior">
-                        <li>IPS-SMAUNAM-PREVENCIÓN-MEDIFE-JERARQUICOS-OSSEG-ACCORD-AFA-CENTRO DE PATRONES-CLERO-FARMACIA-FERROVIARIOS-MEDICUS-SWISS MEDICAL-OPDEA-OSPEDYC-OSPES-OSPIDA-OSSPRA-SCIS MEDICINA PRIVADA-PANADEROS-PODER JUDICIAL-POLICIA FEREDAL-PROPAGANDA MEDICA- SOMU-ACASALUD-GALENO-FUTBOLISTAS AGREMIADOS-OSALARA-OSSACRA-OSVARA-OSPIP-CAMIONEROS-SANCOR SALUD- OSSEG</li>
-            </ul>
-                       
-                      
-            
-        </section>
-
-
-
-        
-        <aside>
-            <h1 class="titulo__aside">Te puede interesar</h1>
+    <nav>
+        <div class="container">
+            <input id="responsive-menu" type="checkbox">
+            <label for="responsive-menu">Menu <span id="menu-icon"></span></label>
+            <div id="overlay"></div>
             <ul>
-                <img class="aside__image" src="etiquetado.jpg" alt="Logos etiquetas">
-                <li class="aside__link"><a href="https://www.argentina.gob.ar/justicia/derechofacil/leysimple/salud/ley-de-etiquetado-frontal" target="_blank" rel="noopener">Ley de etiquetado frontal</a></li>
-                <br>
-                <br>
-                <br>            
-                <img class="aside__image" src="saludables bbc.jpg" alt="Logos etiquetas">            
-                <li class="aside__link"><a href="https://www.bbc.com/mundo/noticias-53838500" target="_blank" rel="noopener">10 alimentos saludables para tener siempre a mano</a></li>
-                <br>
-                <br>
-                <br>            
-                <img class="aside__image" src="dietasdemoda.jpg" alt="dietas de moda">
-                <li class="aside__link"><a href="https://www.clikisalud.net/cuales-los-peligros-seguir-las-dietas-moda/" target="_blank" rel="noopener">Los peligros de seguir las dietas de moda</a></li>
-                <br>
-                <br>
-                <img class="aside__image" src="agua.jpg" alt="niño bebiendo">
-                <li class="aside__link"><a href="https://www.healthychildren.org/Spanish/healthy-living/nutrition/Paginas/Choose-Water-for-Healthy-Hydration.aspx" target="_blank" rel="noopener">¿Porque los niños deben elegir Agua?</a></li>
-                <br>
-                <br>
-                <br>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Contactanos.html">Contactanos</a></li>
+                
+                <li><a href=""><i class="fab fa-facebook"></i><span class="screen-reader-text">Facebook</span></a>
+                </li>
+                <li><a href=""><i class="fab fa-linkedin"></i><span class="screen-reader-text">LinkedIn</span></a>
+                </li>
+                <li><a href=""><i class="fab fa-instagram"></i><span class="screen-reader-text">Instagram</span></a>
+                </li>
+    
+                </li>
             </ul>
-        </aside>
+        </div>
+    </nav>
 
-        <footer class="border">
-            <p class="footer">Licenciada Jesica Espinoza Deglise | Nutricionista - Todos Los derechos reservados</p>
+    <header>
+        <h1 id="titulo"> <br> Licenciada <br> Jessica Espinoza Deglise | Nutricionista <br>
+        MP: ...</h1>
+    
+    </header>
+<div  id="conteiner__submenu">
+    <section id="pilares" class="icono"><a class="menu__principal" href="Nuestros Pilares.html">
+        <i class="fa-solid fa-building-columns"></i></a>
+        <p class="texto">Nuestros Pilares</p>
+    </section>
+
+    <section id="programas" class="icono"><a class="menu__principal" href="Programas.html">
+        <i class="fa-solid fa-clipboard-check"></i></a>
+        <p class="texto">Programas</p>
+    </section>
+
+    <section id="recetas" class="icono"><a class="menu__principal" href="Recetas Saludables.html">                
+        <i class="fa-solid fa-plate-wheat"></i></a>
+        <p class="texto">Recetas</p>
+    </section>
+
+    <section id="ejercicios" class="icono"><a class="menu__principal" href="Rutina de ejercicios.html">
+        <i class="fa-solid fa-dumbbell"></i></a>
+        <p class="texto">Rutinas</p>
+    </section>
+
+    <section id="contactanos" class="icono"><a class="menu__principal" href="Contactanos.html">
+        <i class="fa-solid fa-envelopes-bulk"></i></a>
+        <p class="texto">Contactanos</p>
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <section id="preguntas" class="icono">
+        <h2 class="preguntas__titulo">Preguntas Frecuentes</h2> 
+             
+        <ul id="menu">
+            <li><input type="checkbox" name="list" id="nivel1-1"><label for="nivel1-1">¿En que me beneficia llevar una Dieta Saludable?</label>
+                <ul class="interior">
+                    <li><b class="preguntas">D</b>isminución del riesgo de padecer enfermedades cardiovasculares a largo plazo, ayudando a reducir el colesterol (LDL).
+                    </li>
+                    <li><b class="preguntas">P</b>resión arterial en niveles normales.</li>
+                    
+                    <li><b class="preguntas">R</b>educción del deterioro de la memoria y otras funciones cerebrales.</li>
+                    
+                    <li><b class="preguntas">M</b>el sistema inmunológico.</li>
+                    
+                    <li><b class="preguntas">E</b>consumo adecuado de calcio fortalece los huesos y evita la osteoporosis.</li>
+                </ul>   
+            </li>
+              
+            <li><input type="checkbox" name="list" id="nivel1-2"><label for="nivel1-2">¿Como Trabajamos?</label>
+                <ul class="interior">
+                    <li><b class="preguntas">E</b>ducación alimentaria.</li>
+                </ul>
+            </li>
+
+            <li><input type="checkbox" name="list" id="nivel1-3"><label for="nivel1-3">¿Que sucede en la primer consulta?</label>
+                    <ul class="interior">
+                        <li><b class="preguntas">E</b>n la primer consulta el profesional evaluará conjuntamente con el paciente:</li>
+                        <li><b class="preguntas">L</b>a motivación para cambiar, los tratamientos que realizó antes: cuáles les resultaron y cuáles no, la historia de peso, factores causales.</li>
+                        <li><b class="preguntas">L</b>a conducta alimentaria, las preferencias del paciente, evaluará su estilo de vida, problemas de salud y medicación que toma.</li>
+                        <li><b class="preguntas">T</b>omarà medidas antropomètricas: peso, altura, circunferencia abdominal y de cintura, circunferencia de cuello, medición de masa grasa y masa muscular.</li>
+                        <li><b class="preguntas">C</b>on toda esta información el profesional acordará con el paciente un plan de tratamiento específico y personalizado para lograr resultados efectivos</li>
+                    </ul>
+            </li>
+
+            <li><input type="checkbox" name="list" id="nivel1-4"><label for="nivel1-4">¿Cada cuanto debo asistir a las consultas?</label>
+                    <ul class="interior">
+                        <li><b class="preguntas">E</b>so depende de cada paciente.</li>
+                        <li><b class="preguntas">E</b>n general recomendamos que el primer mes el paciente asista una vez por semana, salvo que sean pacientes del interior o que viajan frecuentemente por su trabajo.</b></li>
+                        <li><b class="preguntas">P</b>osteriormente puede acordarse una consulta cada 15 días.</li>
+                        <li><b class="preguntas">T</b>ambién contamos con la modalidad online para personas que no pueden asistir personalmente.</li>
+                    </ul>
+            <li><input type="checkbox" name="list" id="nivel1-5"><label for="nivel1-5">¿Con que Obras Sociales Trabajan?</label>
+                    <ul class="interior">
+                    <li>IPS-SMAUNAM-PREVENCIÓN-MEDIFE-JERARQUICOS-OSSEG-ACCORD-AFA-CENTRO DE PATRONES-CLERO-FARMACIA-FERROVIARIOS-MEDICUS-SWISS MEDICAL-OPDEA-OSPEDYC-OSPES-OSPIDA-OSSPRA-SCIS MEDICINA PRIVADA-PANADEROS-PODER JUDICIAL-POLICIA FEREDAL-PROPAGANDA MEDICA- SOMU-ACASALUD-GALENO-FUTBOLISTAS AGREMIADOS-OSALARA-OSSACRA-OSVARA-OSPIP-CAMIONEROS-SANCOR SALUD- OSSEG</li>
+        </ul>
+                   
+                  
+        
+    </section>
+
+</div>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+    
+<section id="externos1">
+            <h2 class="titulo__externo">Te puede interesar</h2>
+
+            <br>
+            <br>
+            <br>
+            <br>
             
-        </footer>
-
-
-
+            <img class="aside__image" src="etiquetado.jpg" alt="Logos etiquetas">
+            <a class="link__externos" href="https://www.argentina.gob.ar/justicia/derechofacil/leysimple/salud/ley-de-etiquetado-frontal" target="_blank" rel="noopener"><p class="text__externo">Ley de etiquetado frontal</p></a>
+            <br>
+            <br>
+            <br>            
+            <img class="aside__image" src="saludables bbc.jpg" alt="Logos etiquetas">            
+            <a class="link__externos" href="https://www.bbc.com/mundo/noticias-53838500" target="_blank" rel="noopener"><p class="text__externo" >10 alimentos saludables para tener siempre a mano</p></a>
+            <br>
+            <br>
+            <br>            
+            <img class="aside__image" src="dietasdemoda.jpg" alt="dietas de moda">
+            <a class="link__externos" href="https://www.clikisalud.net/cuales-los-peligros-seguir-las-dietas-moda/" target="_blank" rel="noopener"><p class="text__externo">Los peligros de seguir las dietas de moda</p></a>
+            <br>
+            <br>
+            <img class="aside__image" src="agua.jpg" alt="niño bebiendo">
+            <a class="link__externos" href="https://www.healthychildren.org/Spanish/healthy-living/nutrition/Paginas/Choose-Water-for-Healthy-Hydration.aspx" target="_blank" rel="noopener"><p class="text__externo">¿Porque los niños deben elegir Agua?</p></a>
+            <br>
+            <br>
+            <br>
+            
         
+</section>
+
+    <footer class="border">
+        <p class="footer">Licenciada Jesica Espinoza Deglise | Nutricionista - Todos Los derechos reservados</p>
         
+    </footer>
+
+
+
+    
     
 
-    </div>
+
+</div>
 
 </body>
 </html>
-        
