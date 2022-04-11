@@ -1,715 +1,378 @@
+@import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400|Raleway:400,700,400italic,700italic);
 
 * {
-    font-family: 'Montserrat', sans-serif;
-    
-   
-}
-
-
-
-/*inicio estilos vista escritorio*/
-
-
-@media screen and (min-width:768px) {
-
-#grilla {
-    display: grid;
-    grid-template-areas: 
-        "nav header header"
-        "nav pilares externos"
-        "nav programas externos"
-        "nav recetas externos"
-        "nav ejercicios externos"
-        "nav contactanos externos"
-        "nav preguntas externos"
-        "nav footer footer";
-    grid-template-rows: 600px 100px 100px 100px 100px 100px auto;
-    grid-template-columns: 15% 65% 20%;
-    grid-column-gap: 10px;
-    grid-row-gap: 20px;
-    background-color: beige;
+    margin: 0px;
+    padding: 0px;
     
 }
-
-#titulo {
-    font-size: 60px;
-    color: rgb(255, 0, 119);
-}
-
-ul.menu {
-    text-decoration: none;
-}
-
-.nav{
-    font-size: 30px;
-    color: white;
-}
-
-header {
-    grid-area: header;
-    background-image: url(frutas.jpg);
-    background-size: cover;
-    text-align: center;
-       
-}
-
-footer {
-    grid-area: footer;
-    text-align: center;
-    background-color: rgb(255, 0, 119);
-   
-}
-
-section#pilares {
-    grid-area: pilares;
-    
-}
-
-section#programas {
-    grid-area: programas;
-    
-}
-
-section#recetas {
-    grid-area: recetas;
-    
-}
-
-section#ejercicios {
-    grid-area: ejercicios;
-    
-
-    
-}
-
-section#contactanos {
-    grid-area: contactanos; 
-   
-}
-
-section#preguntas {
-    grid-area: preguntas;
-    
-}
-
-nav {
-    grid-area: nav;
-    background-color: rgb(255, 0, 119);
-   
-}
-
-aside {
-    grid-area: externos;
-    
-}
-a:link, a:visited,  a:hover, a:active
-{
-    color: #000000;
-    text-decoration: none;
-    text-align: center;
-}
-i {
-    color: rgb(255, 0, 119);
-    margin: 20px;
-    font-size: 60px;
-    
-    
-}
-
-a.menu__principal {
-    font-size: 50px;
-}
-
-input{
-    width:100%;
-    padding:10px;
-    box-sizing:border-box;
-    background:none;
-    outline:none;
-    resize:none;
-    border:0;
-    font-family:'Montserrat',sans-serif;transition:all .3s;
-    border-bottom:2px solid #bebed2;
-}
-input:focus{
-    border-bottom:2px solid #78788c;
-}
-p:before{
-    
-    content:attr(type);
-    
-    display:block;
-    
-    margin:28px 0 0;
-    
-    font-size:14px;
-    
-    color:#5a5a5a;
-
-}
-button{
-    float:right;
-    padding:8px 12px;
-    margin:8px 0 0;
-    font-family:'Montserrat',sans-serif;
-    border:2px solid #78788c;
-    background:0;
-    color:#5a5a6e;
-    cursor:pointer;
-    transition:all .3s;
-}
-button:hover{
-    background:#78788c;
-    color:#fff;
-}
-
-.nav__menu {
-    display: block;
-}
-
-ul.nav__menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(255, 0, 119);
-    
-}
-
-li.nav__menu {
-    float: left;
-    
-
-}
-
-li.nav__menu {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-}
-
-li.nav__menu:hover {
-    background-color: rgb(187, 150, 180);
-}
-
-
-#menu__pilar {
-    display: grid;
-    grid-template-areas: 
-        "nav header header"
-        "nav sec_pilar externos"
-        "nav footer footer";
-    grid-template-rows: 600px 600px auto;
-    grid-template-columns: 15% 80% 5%;
-    grid-column-gap: 10px;
-    grid-row-gap: 20px;
-    background-color: beige;
-    
-}
-
-section#sec__pilar {
-    grid-area: sec_pilar;
-
-}
-
-#menu__programas {
-    display: grid;
-    grid-template-areas: 
-        "nav header header"
-        "nav sec_programas externos"
-        "nav footer footer";
-    grid-template-rows: 600px 800px auto;
-    grid-template-columns: 15% 80% 5%;
-    grid-column-gap: 10px;
-    grid-row-gap: 20px;
-    background-color: beige;
-    
-}
-
-section#sec__programas {
-    grid-area: sec_programas;
-
-}
-#menu__recetas {
-    display: grid;
-    grid-template-areas: 
-        "nav header header"
-        "nav sec_recetas externos"
-        "nav footer footer";
-    grid-template-rows: 600px auto auto;
-    grid-template-columns: 15% 80% 5%;
-    grid-column-gap: 10px;
-    grid-row-gap: 20px;
-    background-color: beige;
-    
-}
-
-section#sec__recetas {
-    grid-area: sec_recetas;
-
-}
-
-#menu__ejercicios {
-    display: grid;
-    grid-template-areas: 
-        "nav header header"
-        "nav sec_ejercicios externos"
-        "nav footer footer";
-    grid-template-rows: 600px auto auto;
-    grid-template-columns: 15% 80% 5%;
-    grid-column-gap: 10px;
-    grid-row-gap: 20px;
-    background-color: beige;
-    
-}
-
-section#sec__ejercicios {
-    grid-area: sec_ejercicios;
-
-}
-
-#menu__contacto {
-    display: grid;
-    grid-template-areas: 
-        "nav header header"
-        "nav sec_contacto externos"
-        "nav footer footer";
-    grid-template-rows: 600px auto auto;
-    grid-template-columns: 15% 80% 5%;
-    grid-column-gap: 10px;
-    grid-row-gap: 20px;
-    background-color: beige;
-    
-}
-
-section#sec__contacto {
-    grid-area: sec_contacto;
-
-}
-
-
-.aside__image {
-    width: 200px;
-    height: 150px;
-}
-
-#menu * { list-style:none;}
-#menu li{ line-height:180%;}
-#menu li a{color:#222; text-decoration:none;}
-#menu li a:before{ content:"\025b8"; color:#ddd; margin-right:4px;}
-#menu input[name="list"] {
-	position: absolute;
-	left: -1000em;
-	}
-#menu label:before{ content:"\025b8"; margin-right:4px;}
-#menu input:checked ~ label:before{ content:"\025be";}
-#menu .interior{display: none;}
-#menu input:checked ~ ul{display:block;}
-
-b {
-    color: rgb(255, 0, 119);
-    font-size: 20px;
-}
-
-}
-
-/*fin estilos para escitorio*/
-
-
-/*inicio estilos first mobile*/
 
 /*inicio grid mobile*/
 
 @media screen and (max-width: 767px) {
 
-#grilla {
-    display: grid;
-    grid-template-areas: 
-        "nav nav nav"
-        "header header header"
-        "pilares pilares pilares"
-        "programas programas programas"
-        "recetas recetas recetas"
-        "ejercicios ejercicios ejercicios"
-        "contactanos contactanos contactanos"
-        "preguntas preguntas preguntas"
-        "externos externos externos"
-        "footer footer footer";
-    grid-template-rows: 60px 200px 100px 100px 100px 100px 100px auto;
-    grid-template-columns: auto;
-    background-color:beige ;
+    #grilla {
+        display: grid;
+        grid-template-areas: 
+            "nav nav nav"
+            "header header header"
+            "pilares pilares pilares"
+            "programas programas programas"
+            "recetas recetas recetas"
+            "ejercicios ejercicios ejercicios"
+            "contactanos contactanos contactanos"
+            "preguntas preguntas preguntas"
+            "externos1 externos1 externos1"
+            "footer footer footer";
+        grid-template-rows: 60px 200px 100px 100px 100px 100px 100px auto;
+        grid-template-columns: auto;
+        background-color:beige ;
+            
+    }
+
+    header {
+        grid-area: header;
+        margin: 20px;
+        width: auto;
+        height: 200px;
+        padding: 0px;
+        background-color: rgba(255, 255, 255, .6);
         
-}
+        
 
+    }    
 
-/*inicio header para todas las paginas*/
+   
 
-header {
-    grid-area: header;
-    background-image: url(frutas.jpg);
-    background-size: cover;
-    text-align: center;
+    footer {
+        grid-area: footer;
+        text-align: center;
+        background-color: #30E8BF;
+        font-size: 20px;
+        display: inline-block;
            
-}
+    }
 
-#titulo {
-    font-size: 20px;
-    color: rgb(255, 0, 119);
-}
+    p.texto{
+        font-size: 1.2em;
+        color: white;
+        text-align: center;
+        margin-top: -70px;
+        opacity: .6;
+    }
 
-/*fin header para todas las paginas*/
-
-/*inicio nav para todas las paginas*/
-
-nav {
-	margin: none;
-
-	position: relative;
-	width: auto;
-	height: 50px;
-	background-color: beige;
-	border-radius: 8px;
-	font-size: 0;
-    text-align: left;
-}
-nav a {
-	line-height: 50px;
-	height: 100%;
-	font-size: 12px;
-	display: inline-block;
-	position: relative;
-	z-index: 1;
-	text-decoration: none;
-	text-transform: uppercase;
-	text-align: center;
-	color: white;
-	cursor: pointer;
-}
-nav .animation {
-	position: absolute;
-	height: 100%;
-	top: 0;
-	z-index: 0;
-	transition: all .5s ease 0s;
-	border-radius: 8px;
-}
-a:nth-child(1) {
-	width: 40px;
-}
-a:nth-child(2) {
-	width: 110px;
-}
-a:nth-child(3) {
-	width: 100px;
-}
-a:nth-child(4) {
-	width: 160px;
-}
-a:nth-child(5) {
-	width: 120px;
-}
-a:nth-child(6) {
-	width: 120px
-}
-nav .start-home, a:nth-child(1):hover.animation {
-	width: 40px;
-	left: 0;
-	background-color: #1abc9c;
-}
-nav .start-programas, a:nth-child(2):hover~.animation {
-	width: 110px;
-	left: 100px;
-	background-color: #e74c3c;
-}
-nav .start-pilares, a:nth-child(3):hover~.animation {
-	width: 100px;
-	left: 210px;
-	background-color: #3498db;
-}
-nav .start-ejercicios, a:nth-child(4):hover~.animation {
-	width: 160px;
-	left: 310px;
-	background-color: #9b59b6;
-}
-nav .start-contactanos, a:nth-child(5):hover~.animation {
-	width: 120px;
-	left: 470px;
-	background-color: #e67e22;
-}
-
-nav .start-recetas, a:nth-child(6):hover~.animation {
-	width: 100px;
-	left: 600px;
-	background-color: black;
-}
+  
+   section#pilares.icono {margin: auto;}
+   section#programas.icono {margin: auto;}
+   section#recetas.icono {margin: auto;}
+   section#ejercicios.icono {margin: auto;}
+   section#contactanos.icono {margin: auto;}
+   section#preguntas.icono {margin: auto;}
+   section#externos1 {margin: auto;}
 
 
 
+    section#pilares {
+        grid-area: pilares;
+        background-image: linear-gradient( 129.1deg,  rgba(243,199,83,0.6) 26.8%, rgba(18,235,207,0.6) 114.1% );
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        
+     
+        
+            
+    }
 
+    section#pilares.icono:hover {background-color: rgb(255, 0, 119);}
+    section#programas.icono:hover {background-color: rgb(255, 0, 119);}
+    section#recetas.icono:hover {background-color: rgb(255, 0, 119);}
+    section#ejercicios.icono:hover {background-color: rgb(255, 0, 119);}
+    section#contactanos.icono:hover {background-color: rgb(255, 0, 119);}
+        
+    section#programas {
+        grid-area: programas;
+        background-image: linear-gradient( 129.1deg,  rgba(243,199,83,0.6) 26.8%, rgba(18,235,207,1) 114.1% );
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;      
+    }
+        
+    section#recetas {
+        grid-area: recetas;
+        background-image: linear-gradient( 129.1deg,  rgba(243,199,83,1) 26.8%, rgba(18,235,207,1) 114.1% );
+        width: 300px;
+        height: 200px; background-image: linear-gradient( 129.1deg,  rgba(243,199,83,0.6) 26.8%, rgba(18,235,207,0.6) 114.1% );
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;   
+    }
+        
+    section#ejercicios {
+        grid-area: ejercicios; 
+        background-image: linear-gradient( 129.1deg,  rgba(243,199,83,0.6) 26.8%, rgba(18,235,207,0.6) 114.1% );
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;   
+    }
+        
+    section#contactanos {
+        grid-area: contactanos; 
+        background-image: linear-gradient( 129.1deg,  rgba(243,199,83,0.6) 26.8%, rgba(18,235,207,0.6) 114.1% );
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;  
+    }
+        
+    section#preguntas {
+        grid-area: preguntas;
+        font-size: 20px;
+        width: 300px;
+        height: auto;
+        background-color: rgba(255, 255, 255, .6);
+    }
 
-/*fin nav para todas las paginas*/
+    section#externos1 {
+        grid-area: preguntas1;
+        font-size: 20px;
+        width: 300px;
+        height: auto;
+        background-color: rgba(255, 255, 255, .6);
+        
+    }
 
-/*inicio estilos menu inicio*/
+    }
 
-i {
-    font-size: 40px;
+    .preguntas__titulo {
+        text-align: center;
+        color: red;
+    }
+/*inicio estilo nav*/
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
 }
 
-.menu__principal {
+html,
 
+body {
+    background: white url(frutasmobile.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: black;
+    
+}
+
+
+a {
+    color: rgb(255, 255, 255);
     font-size: 30px;
 }
 
-/*inicio estilos menu inicio*/
-
-.preguntas__titulo {
-    text-align: center;
-    color: red;
-}
-
-    
-footer {
-    grid-area: footer;
-    text-align: center;
-    background-color: rgb(255, 0, 119);
-       
-}
-    
-section#pilares {
-    grid-area: pilares;
-    
-    
-        
-}
-    
-section#programas {
-    grid-area: programas;
-        
-}
-    
-section#recetas {
-    grid-area: recetas;
-        
-}
-    
-section#ejercicios {
-    grid-area: ejercicios; 
-        
-}
-    
-section#contactanos {
-    grid-area: contactanos; 
-       
-}
-    
-section#preguntas {
-    grid-area: preguntas;
-    font-size: 15px;
-        
-}
-    
-nav {
-    grid-area: nav;
-    
-       
-}
-    
-aside {
-    grid-area: externos;
-        
-}
-a:link, a:visited,  a:hover, a:active
-{
-    color: #000000;
+a:hover {
+    color: #83e4e2;
     text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: auto;
+}
+
+main .container {
+    padding: 1em;
+}
+
+.screen-reader-text {
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px;
+}
+
+
+
+/************************************************/
+/****************** NAVIGATION ******************/
+/************************************************/
+nav {
+    background-color: #FF8235;
+    
+
+    color: #1d1f20;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: auto;
+    z-index: 9999;
+}
+
+/*** INPUT ***/
+nav input {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+/*** LABEL ***/
+nav label {
+    cursor: pointer;
+    display: block;
+    font: 2em/1 'Oswald', sans-serif;
+    padding: 0.5em;
+}
+
+/* Hamburger Icon */
+#menu-icon,
+#menu-icon:before,
+#menu-icon:after {
+    background: #1d1f20;
+    border-radius: 0.05em;
+    height: 0.2em;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+}
+
+#menu-icon {
+    display: inline-block;
+    margin: 0.4em 0;
+    max-width: 1em;
+    position: relative;
+}
+
+nav label #menu-icon {
+    float: right;
+}
+
+#menu-icon:before,
+#menu-icon:after {
+    content: '';
+    left: 0;
+    position: absolute;
+}
+
+#menu-icon:before {
+    top: -0.4em;
+}
+
+#menu-icon:after {
+    bottom: -0.4em;
+}
+
+/* Close Icon */
+nav input[type=checkbox]:checked + label #menu-icon {
+    background: transparent;
+}
+
+nav input[type=checkbox]:checked + label #menu-icon:before {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+nav input[type=checkbox]:checked + label #menu-icon:after {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+
+/*** MENU ***/
+/* Overlay */
+nav input:checked ~ #overlay {
+    background: #30E8BF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FF8235, #30E8BF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FF8235, #30E8BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+/* List */
+nav ul {
+    font-size: 1.5em;
+    list-style: none;
+    margin: 0;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
     text-align: center;
 }
+
+nav input:checked ~ ul {
+    margin: 1em;
+    max-height: inherit;
+    opacity: 1;
+}
+
+nav ul > li {
+    margin: 0.5em 0;
+}
+
+nav ul a {
+    color: #1d1f20!important;
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media */
+nav ul#social-media > li {
+    display: inline-block;
+    font-size: 1.5em;
+    margin: 0.5em;
+}
+
+/*fin estilo nav*/
+
+/*inicio estilo header*/
+
+
+
+#titulo {
+    font-size: 2.1em;
+    color: rgb(29, 4, 16);
+    text-align: center;
+    margin-top: 15px;
+    
+}
+
+/*fin estilo header*/
+
+/*inicio estilo menu-paginas*/
+
 i {
-    color: rgb(255, 0, 119);
-    margin: 20px;
-        
-}
-    
-input{
-    width:100%;
-    padding:10px;
-    box-sizing:border-box;
-    background:none;
-    outline:none;
-    resize:none;
-    border:0;
-    font-family:'Montserrat',sans-serif;transition:all .3s;
-    border-bottom:2px solid #bebed2;
-}
-input:focus{
-    border-bottom:2px solid #78788c;
-    }
-p:before{
-        
-    content:attr(type);
-        
-    display:block;
-        
-    margin:28px 0 0;
-        
-    font-size:14px;
-        
-    color:#5a5a5a;
-    
-}
-button{
-    float:right;
-    padding:8px 12px;
-    margin:8px 0 0;
-    font-family:'Montserrat',sans-serif;
-    border:2px solid #78788c;
-    background:0;
-    color:#5a5a6e;
-    cursor:pointer;
-    transition:all .3s;
-}
-button:hover{
-    background:#78788c;
-    color:#fff;
-}
-    
-    
+    font-size: 60px;
+    display: block;
+    margin:10px auto;
+    background-color: rgba(255, 255, 255, .15);
+    width: 100px;
+    margin: 100px;
+    padding: 20px;
+    border-radius: 50%;
 
-    
-#menu__pilar {
-    display: grid;
-    grid-template-areas: 
-        "nav nav nav"
-        "header header header"
-        "sec_pilar sec_pilar sec_pilar"
-        "footer footer footer";
-    grid-template-rows: 80px 200px auto;
-    grid-template-columns: auto;
-    background-color: beige;
-        
-}
-    
-section#sec__pilar {
-    grid-area: sec_pilar;
-    
-}
-    
-#menu__programas {
-    display: grid;
-    grid-template-areas: 
-        "nav nav nav"
-        "header header header"
-        "sec_programas sec_programas sec_programas"
-        "footer footer footer";
-    grid-template-rows: 80px 200px auto;
-    grid-template-columns: auto;
-    background-color: beige;
-        
-}
-    section#sec__programas {
-        grid-area: sec_programas;
-    
+
 }
 
 
-#menu__recetas {
-display: grid;
-grid-template-areas: 
-    "nav nav nav"
-    "header header header"
-    "sec_recetas sec_recetas sec_recetas"
-    "footer footer footer";
-grid-template-rows: 80px 200px auto;
-grid-template-columns: auto;
-background-color: beige;
-
-}
-    section#sec__recetas {
-grid-area: sec_recetas;
-}
 
 
-img {
-    height: 250px;
-    width: 250x;
-   
-    
-}
-    
-    
-#menu__ejercicios {
-    display: grid;
-    grid-template-areas: 
-        "nav nav nav"
-        "header header header"
-        "sec__ejercicios sec__ejercicios sec__ejercicios"
-        "footer footer footer";
-    grid-template-rows: 80px 200px auto;
-    grid-template-columns: auto;
-    background-color: beige;
-        
-}
+/*fin estilo menu-paginas*/
 
 
-    
-section#sec__ejercicios {
-    grid-area: sec__ejercicios;
-    font-size: 10px;
-    
-   
-   
-    
-}
-/* inicio estilos pagina contacto*/
-    
-#menu__contacto {
-    display: grid;
-    grid-template-areas: 
-        "nav nav nav"
-        "header header header"
-        "sec_contacto sec_contacto sec_contacto"
-        "footer footer footer";
-    grid-template-rows: 80px 200px auto auto;
-    grid-template-columns: auto;
-    background-color: beige;
-        
-}
-    
-section#sec__contacto {
-    grid-area: sec_contacto;
-    margin: auto;
-    
-}
-
-/* fin estilos pagina contacto*/
-
-
-/*comienzo estilos del aside*/
-.aside__image {
-    width: 180px;
-    height: 180px;
-    padding-left: 70px;
-    
-}
-
-.titulo__aside {
-
-    text-align: center;
-    color: red;
-
-}
-
-.aside__link {
-    font-size: 25px;
-    color: rgb(255, 0, 119);
-    
-}
-
-/*fin estilos del aside*/
-
+/*inicio estilo pregunta frecuente*/
 
 #menu * { list-style:none;}
 #menu li{ line-height:180%;}
@@ -724,14 +387,32 @@ section#sec__contacto {
 #menu .interior{display: none;}
 #menu input:checked ~ ul{display:block;}
 
-.preguntas {
-    color: rgb(255, 0, 119);
-    font-size: 20px;
+
+/*fin estilo pregunta frecuente*/
+
+/*inicio estilo externos*/
+
+
+.aside__image {
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin: auto;
+    
+}
+
+p.text__externo {
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+h2.titulo__externo {
+    font-size: 1.8em;
+    text-align: center;
+    color: red;
 }
 
 
 
-}
-
-
-/*fin estilos first mobile*/
