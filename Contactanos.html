@@ -1,47 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <title>Jessica Espinoza Deglise</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/cbaa542b69.js" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    
-</head>
-<body>
-    <div id="menu__contacto">
-        <header>
-            <h1 id="titulo">Licenciada Jessica Espinoza Deglise | Nutricionista</h1>
-        </header>
-            
+    <head>
+        <title>Jessica Espinoza Deglise</title>
+        <link rel="stylesheet" href="style.css">    
+        <script src="https://kit.fontawesome.com/cbaa542b69.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    </head>
+    <body>
         
         <nav>
-                
-            <ul id="menu" class="naver">
-
-                <li class="naver__sup"><a href="index.html">Inicio</a></li>
-                <li class="naver__sup"><a href="Nuestros Pilares.html">Nuestros Pilares</a></li>
-                <li class="naver__sup"><a href="Programas.html">Programas</a> </li>
-                <li class="naver__sup"><a href="Recetas Saludables.html">Recetas Saludables</a></li>
-               
-                      
-            </ul>      
+            <div class="container">
+                <input id="responsive-menu" type="checkbox">
+                <label for="responsive-menu">Menu <span id="menu-icon"></span></label>
+                <div id="overlay"></div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Contactanos.html">Contactanos</a></li>
+                    
+                    <li><a href=""><i class="fab fa-whatsapp"></i><span class="screen-reader-text">Whatsapp</span></a>
+                    </li>
+                    <li><a href=""><i class="fab fa-linkedin"></i><span class="screen-reader-text">LinkedIn</span></a>
+                    </li>
+                    <li><a href=""><i class="fab fa-instagram"></i><span class="screen-reader-text">Instagram</span></a>
+                    </li>
+        
+                    </li>
+                </ul>
+            </div>
         </nav>
+    
+        <header>
+            <h1 id="titulo"> <br> Licenciada <br> Jessica Espinoza Deglise | Nutricionista <br>
+            M.P. 234</h1>
+        
+        </header>
 
         <section id="sec__contacto">
 
             <form class="form">
-                <h2>Contacto</h2>
-                <p type="Nombre:"><input placeholder="Escribe tu Nombre"></input></p>
-                <p type="Email:"><input placeholder="Correo para contactarte"></input></p>
-                <p type="Mensaje:"><input placeholder="Motivo del contacto"></input></p>
+                <h2 class="preguntas__titulo">Contacto</h2>
+                <br>
+                
+                <p class="form" >Nombre</p>
+                <p type="Nombre:"><input class="dato__1" placeholder="Escribe tu Nombre"></input></p>
+                <br>
+                <p class="form" >Email</p>
+                <p type="Email:"><input class="dato__1" placeholder="Correo para contactarte"></input></p>
+                <br>
+                
+                <p class="form" >Mensaje</p>
+                <p type="Mensaje:"><input class="dato__2" placeholder="Motivo del contacto"></input></p>
+                <br>
+        
                 <button>Enviar</button>
                 <div>
+                <br>
+                
+                
                 <span class="fa fa-phone"></span>+54 3764646509
+                <br>
+                <br>
                 <span class="fa fa-envelope-o"></span> jessicanutri@gmail.com
             </div>
             </form>
@@ -51,7 +74,7 @@
 
 
 
-    <footer>
+    <footer class="border">
         <p class="footer">Licenciada Jesica Espinoza Deglise | Nutricionista - Todos Los derechos reservados</p>
     
     </footer>

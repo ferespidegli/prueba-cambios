@@ -39,12 +39,10 @@
         grid-area: header;
         margin: 0px;
         width: auto;
-        height: 200px;
+        height: auto;
         padding: 0px;
         background-color: rgba(255, 255, 255, .6);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        
         
         
 
@@ -469,7 +467,56 @@ h2.mapa-text {
         
         }
 
-    
+        #sec__contacto {
+            display: grid;
+            grid-template-areas: 
+                "nav nav"
+                "header header"
+                "sec__contacto sec__contaco"
+                "footer footer";
+            grid-template-rows: auto 600px auto auto;
+            grid-template-columns: auto;
+            background-color: rgba(255, 255, 255, .6);
+                
+        }
+
+
+        #sec__contacto {
+            display: grid;
+            grid-template-areas: 
+                "nav header header"
+                "nav sec_contacto externos"
+                "nav footer footer";
+            grid-template-rows: 430px;
+            grid-template-columns: 100%;
+            grid-column-gap: 10px;
+            grid-row-gap: 20px;
+            
+            
+        }
+        
+        section#sec__contacto {
+            grid-area: sec_contacto;
+            margin: 60px;
+            text-align: center;
+            text-align: left;
+        }
+        input.dato__1 {
+            width: 280px;
+            height: 30px;
+        }
+        input.dato__2 {
+            width: 280px;
+            height: 120px;
+        }
+        p.form {
+            font-size: 1.5em;
+            font-family: 'Montserrat', sans-serif;
+        }
+        form.form {
+            padding: 10px;
+        }
+   
 
     /*inicio estilo menu-paginas*/
 
