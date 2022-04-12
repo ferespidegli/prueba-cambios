@@ -11,6 +11,8 @@
 
 @media screen and (max-width: 767px) {
 
+
+
     #grilla {
         display: grid;
         grid-template-areas: 
@@ -31,7 +33,7 @@
     }
 
 
-/*inicio estilo header*/    
+    /*inicio estilo header*/    
     header {
         grid-area: header;
         margin: 20px;
@@ -47,29 +49,64 @@
 
 
 
-#titulo {
-    font-size: 2.1em;
-    color: rgb(29, 4, 16);
-    text-align: center;
-    margin-top: 15px;
+    #titulo {
+        font-size: 2em;
+        color: rgb(29, 4, 16);
+        text-align: center;
+        margin-top: 15px;
     
-}
+    }
 
-/*fin estilo header*/
+    /*fin estilo header*/
 
-/*inicio estilo footer*/
+    /*inicio estilo footer*/
    
 
-    footer {
+    footer.border {
         grid-area: footer;
         text-align: center;
         background-color: #30E8BF;
-        font-size: 1.2em;
+        font-size: 1em;
+        padding: 20px;
+        display: inline-block;
+        
         
            
     }
 
-/*inicio estilo footer*/
+    i#icon__footer.fa-solid.fa-map-location-dot {
+        color: white;
+        padding: 10px;
+        margin: auto;
+        display: block;
+        background-color: rgba(108, 121, 133, .3);
+        text-align: center;
+    }
+
+iframe.mapa__icon {
+    height: 300px;
+    width: 300px;
+    
+}
+
+div.mapa {
+    background-color: rgba(255, 255, 255, .6);
+    margin: 20px;
+}
+
+h2.mapa-text {
+    text-align: center;
+    font-size: 2.2em;
+    color: red;
+
+}
+
+    div.iframe {
+        padding: auto;
+        margin: 36px;
+    }
+
+    /*inicio estilo footer*/
 
     p.texto{
         font-size: 1.2em;
@@ -165,263 +202,267 @@
         text-align: center;
         color: red;
     }
-/*inicio estilo nav*/
+    /*inicio estilo nav*/
 
-*,
-*:before,
-*:after {
+    *,
+    *:before,
+    *:after {
     box-sizing: border-box;
-}
+    }
 
-html,
 
-body {
-    background: white url(frutasmobile.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size:cover;
-    color: black;
+
+    body {
+        background: white url(frutasmobile.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size:cover;
+        color: black;
     
-}
+    }
 
 
-a {
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-    text-decoration: none;
-}
-
-
-
-.container {
-    margin: 0 auto;
-    max-width: auto;
-}
-
-main .container {
-    padding: 1em;
-}
-
-.screen-reader-text {
-    clip: rect(1px 1px 1px 1px);
-    clip: rect(1px, 1px, 1px, 1px);
-    height: 1px;
-    overflow: hidden;
-    position: absolute !important;
-    width: 1px;
-}
+    a   {
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        text-decoration: none;
+    }
 
 
 
-/* inicio nav*/
-nav {
-    background-color: #FF8235;
+    .container {
+        margin: 0 auto;
+        max-width: auto;
+    }
+
+    main .container {
+        padding: 1em;
+    }
+
+    .screen-reader-text {
+        clip: rect(1px 1px 1px 1px);
+        clip: rect(1px, 1px, 1px, 1px);
+        height: 1px;
+        overflow: hidden;
+        position: absolute !important;
+        width: 1px;
+    }
+
+
+
+    /* inicio nav*/
+    nav {
+        background-color: #FF8235;
     
 
-    color: #1d1f20;
-    left: 0;
-    position: relative;
-    top: 0;
-    width: auto;
-    z-index: 9999;
-}
+        color: #1d1f20;
+        left: 0;
+        position: relative;
+        top: 0;
+        width: auto;
+        z-index: 9999;
+    }
 
-/*** INPUT ***/
-nav input {
-    opacity: 0;
-    position: absolute;
-    z-index: -1;
-}
+    /*** INPUT ***/
+    nav input {
+        opacity: 0;
+        position: absolute;
+        z-index: -1;
+    }
 
-/*** LABEL ***/
-nav label {
-    cursor: pointer;
-    display: block;
-    font: 2em/1 'Oswald', sans-serif;
-    padding: 0.5em;
-}
+    /*** LABEL ***/
+    nav label {
+        cursor: pointer;
+        display: block;
+        font: 2em/1 'Oswald', sans-serif;
+        padding: 0.5em;
+    }
 
-/* Hamburger Icon */
-#menu-icon,
-#menu-icon:before,
-#menu-icon:after {
-    background: #1d1f20;
-    border-radius: 0.05em;
-    height: 0.2em;
-    transition: all 0.2s ease-in-out;
-    width: 100%;
-}
+    /* Hamburger Icon */
+    #menu-icon,
+    #menu-icon:before,
+    #menu-icon:after {
+        background: #1d1f20;
+        border-radius: 0.05em;
+        height: 0.2em;
+        transition: all 0.2s ease-in-out;
+        width: 100%;
+    }
 
-#menu-icon {
-    display: inline-block;
-    margin: 0.4em 0;
-    max-width: 1em;
-    position: relative;
-}
+    #menu-icon {
+        display: inline-block;
+        margin: 0.4em 0;
+        max-width: 1em;
+        position: relative;
+    }
 
-nav label #menu-icon {
-    float: right;
-}
+    nav label #menu-icon {
+        float: right;
+    }
 
-#menu-icon:before,
-#menu-icon:after {
-    content: '';
-    left: 0;
-    position: absolute;
-}
+    #menu-icon:before,
+    #menu-icon:after {
+        content: '';
+        left: 0;
+        position: absolute;
+    }   
 
-#menu-icon:before {
-    top: -0.4em;
-}
+    #menu-icon:before {
+        top: -0.4em;
+    }
 
-#menu-icon:after {
-    bottom: -0.4em;
-}
+    #menu-icon:after {
+        bottom: -0.4em;
+    }
 
-/* Close Icon */
-nav input[type=checkbox]:checked + label #menu-icon {
+    /* Close Icon */
+    nav input[type=checkbox]:checked + label #menu-icon {
     background: transparent;
-}
+    }
 
-nav input[type=checkbox]:checked + label #menu-icon:before {
-    top: 0;
-    transform: rotate(-45deg);
-}
+    nav input[type=checkbox]:checked + label #menu-icon:before {
+        top: 0;
+        transform: rotate(-45deg);
+    }
 
-nav input[type=checkbox]:checked + label #menu-icon:after {
-    bottom: 0;
-    transform: rotate(45deg);
-}
-
-
-/*** MENU ***/
-/* Overlay */
-nav input:checked ~ #overlay {
-    background: #30E8BF;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #FF8235, #30E8BF);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #FF8235, #30E8BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    bottom: 0;
-    left: 0;
-    height: 100%;
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 100%;
-    z-index: -1;
-}
-
-/* List */
-nav ul {
-    font-size: 1.5em;
-    list-style: none;
-    margin: 0;
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    padding: 0;
-    text-align: center;
-}
-
-nav input:checked ~ ul {
-    margin: 1em;
-    max-height: inherit;
-    opacity: 1;
-}
-
-nav ul > li {
-    margin: 0.5em 0;
-}
-
-nav ul a {
-    color: #1d1f20!important;
-    text-decoration: none;
-}
-
-nav ul a:hover {
-    text-decoration: underline;
-}
-
-/* Social Media */
-nav ul#social-media > li {
-    display: inline-block;
-    font-size: 1.5em;
-    margin: 0.5em;
-}
-
-/*fin estilo nav*/
+    nav input[type=checkbox]:checked + label #menu-icon:after {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
 
 
+    /*** MENU ***/
+    /* Overlay */
+    nav input:checked ~ #overlay {
+        background: #30E8BF;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #FF8235, #30E8BF);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #FF8235, #30E8BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-/*inicio estilo menu-paginas*/
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+    }
 
-i#icon__submenu {
-    font-size: 60px;
-    margin:auto;
-    background-color: rgba(126, 24, 24, 0.15);
-    width: 100px;
-    margin: 100px;
-    border-radius: 50%;
-    text-align: center;
+    /* List */
+    nav ul {
+        font-size: 1.5em;
+        list-style: none;
+        margin: 0;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        padding: 0;
+        text-align: center;
+    }
+
+    nav input:checked ~ ul {
+        margin: 1em;
+        max-height: inherit;
+        opacity: 1;
+    }
+
+    nav ul > li {
+        margin: 0.5em 0;
+    }
+
+    nav ul a {
+        color: #1d1f20!important;
+        text-decoration: none;
+    }
+
+    nav ul a:hover {
+        text-decoration: underline;
+    }
+
+    /* Social Media */
+    nav ul#social-media > li {
+        display: inline-block;
+        font-size: 1.5em;
+        margin: 0.5em;
+    }
+
+    /*fin estilo nav*/
+
+    iframe {
+        width: 250px;
+        height: 250px;
+    }
+
+    /*inicio estilo menu-paginas*/
+
+    i#icon__submenu {
+        font-size: 40px;
+        margin:auto;
+        background-color: rgba(126, 24, 24, 0.15);
+        width: 100px;
+        margin: 100px;
+        border-radius: 50%;
+        text-align: center;
 
 
-}
+    }
 
 
 
 
-/*fin estilo menu-paginas*/
+    /*fin estilo menu-paginas*/
 
 
-/*inicio estilo pregunta frecuente*/
+    /*inicio estilo pregunta frecuente*/
 
-#menu * { list-style:none;}
-#menu li{ line-height:180%;}
-#menu li a{color:#222; text-decoration:none;}
-#menu li a:before{ content:"\025b8"; color:#ddd; margin-right:4px;}
-#menu input[name="list"] {
-	position: absolute;
-	left: -1000em;
+    #menu * { list-style:none;}
+    #menu li{ line-height:180%;}
+    #menu li a{color:#222; text-decoration:none;}
+    #menu li a:before{ content:"\025b8"; color:#ddd; margin-right:4px;}
+    #menu input[name="list"] {
+	    position: absolute;
+	    left: -1000em;
 	}
-#menu label:before{ content:"\025b8"; margin-right:4px;}
-#menu input:checked ~ label:before{ content:"\025be";}
-#menu .interior{display: none;}
-#menu input:checked ~ ul{display:block;}
+    #menu label:before{ content:"\025b8"; margin-right:4px;}
+    #menu input:checked ~ label:before{ content:"\025be";}
+    #menu .interior{display: none;}
+    #menu input:checked ~ ul{display:block;}
 
 
-/*fin estilo pregunta frecuente*/
+    /*fin estilo pregunta frecuente*/
 
-/*inicio estilo externos*/
+    /*inicio estilo externos*/
 
 
-.aside__image {
-    height: 200px;
-    width: 200px;
-    display: block;
-    margin: auto;
+    .aside__image {
+        height: 200px;
+        width: 200px;
+        display: block;
+        margin: auto;
     
-}
+    }
 
-p.text__externo {
-    font-size: 1.2em;
-    text-align: center;
-    text-decoration: none;
-    color: black;
-}
+    p.text__externo {
+        font-size: 1.2em;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+    }
 
-h2.titulo__externo {
-    font-size: 1.8em;
-    text-align: center;
-    color: red;
-}
+    h2.titulo__externo {
+        font-size: 1.8em;
+        text-align: center;
+        color: red;
+    }
 
 
 
-/*inicio grid tablet*/
+    /*inicio grid tablet*/
 
-@media only screen  
-and (min-width : 768px)  
-and (max-width : 1024px) {
+
+
+
+@media only screen  and (min-width : 768px)  and (max-width : 1023px) {
 
     #grilla {
         display: grid;
@@ -830,7 +871,7 @@ h2.titulo__externo {
 
 /* Desktops and laptops ----------- */  
 @media only screen  
-and (min-width : 1224px) {
+and (min-width : 1023px) {
 
     #grilla  {
         display: grid;
