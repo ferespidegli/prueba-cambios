@@ -30,6 +30,8 @@
             
     }
 
+
+/*inicio estilo header*/    
     header {
         grid-area: header;
         margin: 20px;
@@ -42,16 +44,32 @@
 
     }    
 
+
+
+
+#titulo {
+    font-size: 2.1em;
+    color: rgb(29, 4, 16);
+    text-align: center;
+    margin-top: 15px;
+    
+}
+
+/*fin estilo header*/
+
+/*inicio estilo footer*/
    
 
     footer {
         grid-area: footer;
         text-align: center;
         background-color: #30E8BF;
-        font-size: 20px;
-        display: inline-block;
+        font-size: 1.2em;
+        
            
     }
+
+/*inicio estilo footer*/
 
     p.texto{
         font-size: 1.2em;
@@ -100,9 +118,9 @@
         
     section#recetas {
         grid-area: recetas;
-        background-image: linear-gradient( 129.1deg,  rgba(243,199,83,1) 26.8%, rgba(18,235,207,1) 114.1% );
+        background-image: linear-gradient( 129.1deg,  rgba(243,199,83,0.6) 26.8%, rgba(18,235,207,0.6) 114.1% );
         width: 300px;
-        height: 200px; background-image: linear-gradient( 129.1deg,  rgba(243,199,83,0.6) 26.8%, rgba(18,235,207,0.6) 114.1% );
+        height: 200px; 
         width: 300px;
         height: 300px;
         border-radius: 50%;   
@@ -170,12 +188,10 @@ body {
 a {
     color: rgb(255, 255, 255);
     font-size: 30px;
-}
-
-a:hover {
-    color: #83e4e2;
     text-decoration: none;
 }
+
+
 
 .container {
     margin: 0 auto;
@@ -197,9 +213,7 @@ main .container {
 
 
 
-/************************************************/
-/****************** NAVIGATION ******************/
-/************************************************/
+/* inicio nav*/
 nav {
     background-color: #FF8235;
     
@@ -337,19 +351,419 @@ nav ul#social-media > li {
 
 /*fin estilo nav*/
 
-/*inicio estilo header*/
+
+
+/*inicio estilo menu-paginas*/
+
+i#icon__submenu {
+    font-size: 60px;
+    margin:auto;
+    background-color: rgba(126, 24, 24, 0.15);
+    width: 100px;
+    margin: 100px;
+    border-radius: 50%;
+    text-align: center;
+
+
+}
+
+
+
+
+/*fin estilo menu-paginas*/
+
+
+/*inicio estilo pregunta frecuente*/
+
+#menu * { list-style:none;}
+#menu li{ line-height:180%;}
+#menu li a{color:#222; text-decoration:none;}
+#menu li a:before{ content:"\025b8"; color:#ddd; margin-right:4px;}
+#menu input[name="list"] {
+	position: absolute;
+	left: -1000em;
+	}
+#menu label:before{ content:"\025b8"; margin-right:4px;}
+#menu input:checked ~ label:before{ content:"\025be";}
+#menu .interior{display: none;}
+#menu input:checked ~ ul{display:block;}
+
+
+/*fin estilo pregunta frecuente*/
+
+/*inicio estilo externos*/
+
+
+.aside__image {
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin: auto;
+    
+}
+
+p.text__externo {
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+h2.titulo__externo {
+    font-size: 1.8em;
+    text-align: center;
+    color: red;
+}
+
+
+
+/*inicio grid tablet*/
+
+@media only screen  
+and (min-width : 768px)  
+and (max-width : 1024px) {
+
+    #grilla {
+        display: grid;
+        grid-template-areas: 
+            "nav nav nav"
+            "header header header"
+            "pilares pilares pilares"
+            "programas programas programas"
+            "recetas recetas recetas"
+            "ejercicios ejercicios ejercicios"
+            "contactanos contactanos contactanos"
+            "preguntas preguntas preguntas"
+            "externos1 externos1 externos1"
+            "footer footer footer";
+        grid-template-rows: 60px 200px 100px 100px 100px 100px 100px auto;
+        grid-template-columns: auto;
+        background-color:beige ;
+            
+    }
+
+
+/*inicio estilo header*/    
+    header {
+        grid-area: header;
+        margin: 20px;
+        width: auto;
+        height: 200px;
+        padding: 0px;
+        background-color: rgba(255, 255, 255, .6);
+        
+        
+
+    }    
+
 
 
 
 #titulo {
     font-size: 2.1em;
-    color: rgb(29, 4, 16);
+    color: black;
     text-align: center;
     margin-top: 15px;
     
 }
 
 /*fin estilo header*/
+
+/*inicio estilo footer*/
+   
+
+    footer {
+        grid-area: footer;
+        text-align: center;
+        background-color: #30E8BF;
+        font-size: 2em;
+        height: auto;
+        
+           
+    }
+
+/*inicio estilo footer*/
+
+    p.texto{
+        font-size: 1.2em;
+        color: white;
+        text-align: center;
+        margin-top: -70px;
+        opacity: .6;
+    }
+
+  
+   section#pilares.icono {margin: auto;}
+   section#programas.icono {margin: auto;}
+   section#recetas.icono {margin: auto;}
+   section#ejercicios.icono {margin: auto;}
+   section#contactanos.icono {margin: auto;}
+   section#preguntas.icono {margin: auto;}
+   section#externos1 {margin: auto;}
+
+
+
+    section#pilares {
+        grid-area: pilares;
+        background-image: linear-gradient( 129.1deg,  rgba(243,199,83,0.6) 26.8%, rgba(18,235,207,0.6) 114.1% );
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        
+     
+        
+            
+    }
+
+    section#pilares.icono:hover {background-color: rgb(255, 0, 119);}
+    section#programas.icono:hover {background-color: rgb(255, 0, 119);}
+    section#recetas.icono:hover {background-color: rgb(255, 0, 119);}
+    section#ejercicios.icono:hover {background-color: rgb(255, 0, 119);}
+    section#contactanos.icono:hover {background-color: rgb(255, 0, 119);}
+        
+    section#programas {
+        grid-area: programas;
+        background-image: linear-gradient( 129.1deg,  rgba(243,199,83,0.6) 26.8%, rgba(18,235,207,1) 114.1% );
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;      
+    }
+        
+    section#recetas {
+        grid-area: recetas;
+        background-image: linear-gradient( 129.1deg,  rgba(243,199,83,0.6) 26.8%, rgba(18,235,207,0.6) 114.1% );
+        width: 300px;
+        height: 200px; 
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;   
+    }
+        
+    section#ejercicios {
+        grid-area: ejercicios; 
+        background-image: linear-gradient( 129.1deg,  rgba(243,199,83,0.6) 26.8%, rgba(18,235,207,0.6) 114.1% );
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;   
+    }
+        
+    section#contactanos {
+        grid-area: contactanos; 
+        background-image: linear-gradient( 129.1deg,  rgba(243,199,83,0.6) 26.8%, rgba(18,235,207,0.6) 114.1% );
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;  
+    }
+        
+    section#preguntas {
+        grid-area: preguntas;
+        font-size: 20px;
+        width: 300px;
+        height: auto;
+        background-color: rgba(255, 255, 255, .6);
+    }
+
+    section#externos1 {
+        grid-area: preguntas1;
+        font-size: 20px;
+        width: 300px;
+        height: auto;
+        background-color: rgba(255, 255, 255, .6);
+        
+    }
+
+    }
+
+    .preguntas__titulo {
+        text-align: center;
+        color: red;
+    }
+/*inicio estilo nav*/
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+
+body {
+    background: white url(frutasmobile.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: black;
+    
+}
+
+
+a {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+
+
+.container {
+    margin: 0 auto;
+    max-width: auto;
+}
+
+main .container {
+    padding: 1em;
+}
+
+.screen-reader-text {
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px;
+}
+
+
+
+/* inicio nav*/
+nav {
+    background-color: #FF8235;
+    
+
+    color: #1d1f20;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: auto;
+    z-index: 9999;
+}
+
+/*** INPUT ***/
+nav input {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+/*** LABEL ***/
+nav label {
+    cursor: pointer;
+    display: block;
+    font: 2em/1 'Oswald', sans-serif;
+    padding: 0.5em;
+}
+
+/* Hamburger Icon */
+#menu-icon,
+#menu-icon:before,
+#menu-icon:after {
+    background: #1d1f20;
+    border-radius: 0.05em;
+    height: 0.2em;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+}
+
+#menu-icon {
+    display: inline-block;
+    margin: 0.4em 0;
+    max-width: 1em;
+    position: relative;
+}
+
+nav label #menu-icon {
+    float: right;
+}
+
+#menu-icon:before,
+#menu-icon:after {
+    content: '';
+    left: 0;
+    position: absolute;
+}
+
+#menu-icon:before {
+    top: -0.4em;
+}
+
+#menu-icon:after {
+    bottom: -0.4em;
+}
+
+/* Close Icon */
+nav input[type=checkbox]:checked + label #menu-icon {
+    background: transparent;
+}
+
+nav input[type=checkbox]:checked + label #menu-icon:before {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+nav input[type=checkbox]:checked + label #menu-icon:after {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+
+/*** MENU ***/
+/* Overlay */
+nav input:checked ~ #overlay {
+    background: #30E8BF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FF8235, #30E8BF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FF8235, #30E8BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+/* List */
+nav ul {
+    font-size: 1.5em;
+    list-style: none;
+    margin: 0;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+}
+
+nav input:checked ~ ul {
+    margin: 1em;
+    max-height: inherit;
+    opacity: 1;
+}
+
+nav ul > li {
+    margin: 0.5em 0;
+}
+
+nav ul a {
+    color: #1d1f20!important;
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media */
+nav ul#social-media > li {
+    display: inline-block;
+    font-size: 1.5em;
+    margin: 0.5em;
+}
+
+/*fin estilo nav*/
+
+
 
 /*inicio estilo menu-paginas*/
 
@@ -414,5 +828,420 @@ h2.titulo__externo {
     color: red;
 }
 
+/* Desktops and laptops ----------- */  
+@media only screen  
+and (min-width : 1224px) {
+
+    #grilla  {
+        display: grid;
+        grid-template-areas: 
+            "nav nav nav"
+            "header header header"
+            "pilares pilares externos1"
+            "programas programas externos1"
+            "recetas recetas externos1"
+            "ejercicios ejercicios externos1"
+            "contactanos contactanos externos1"
+            "preguntas preguntas externos1"
+            "footer footer footer";
+        grid-template-rows: 200px 200px 100px 100px 100px 100px 100px auto;
+        grid-template-columns: auto;
+        background-color:beige ;
+            
+    }
+
+
+/*inicio estilo header*/    
+    header {
+        grid-area: header;
+        margin: 20px;
+        width: auto;
+        height: auto;
+        padding: 0px;
+        background-color: rgba(255, 255, 255, .6);
+        
+        
+
+    }    
+
+
+
+
+#titulo {
+    font-size: 3.1em;
+    color: black;
+    text-align: center;
+    margin-top: 15px;
+    
+}
+
+/*fin estilo header*/
+
+/*inicio estilo footer*/
+   
+
+    footer {
+        grid-area: footer;
+        text-align: center;
+        background-color: #30E8BF;
+        font-size: 2em;
+        height: auto;
+        
+           
+    }
+
+    i.icon__footer {
+        color: beige;
+
+    }
+
+/*inicio estilo footer*/
+
+    p.texto{
+        font-size: 1.2em;
+        color: white;
+        text-align: center;
+        margin-top: -70px;
+        opacity: .6;
+    }
+
+  
+   section#pilares.icono {margin: auto;}
+   section#programas.icono {margin: auto;}
+   section#recetas.icono {margin: auto;}
+   section#ejercicios.icono {margin: auto;}
+   section#contactanos.icono {margin: auto;}
+   section#preguntas.icono {margin: auto;}
+   section#externos1 {margin: auto;}
+
+
+
+    section#pilares {
+        grid-area: pilares;
+        background-image: linear-gradient( 129.1deg,  rgba(243,199,83,0.6) 26.8%, rgba(18,235,207,0.6) 114.1% );
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        
+     
+        
+            
+    }
+
+    section#pilares.icono:hover {background-color: rgb(255, 0, 119);}
+    section#programas.icono:hover {background-color: rgb(255, 0, 119);}
+    section#recetas.icono:hover {background-color: rgb(255, 0, 119);}
+    section#ejercicios.icono:hover {background-color: rgb(255, 0, 119);}
+    section#contactanos.icono:hover {background-color: rgb(255, 0, 119);}
+        
+    section#programas {
+        grid-area: programas;
+        background-image: linear-gradient( 129.1deg,  rgba(243,199,83,0.6) 26.8%, rgba(18,235,207,1) 114.1% );
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;      
+    }
+        
+    section#recetas {
+        grid-area: recetas;
+        background-image: linear-gradient( 129.1deg,  rgba(243,199,83,0.6) 26.8%, rgba(18,235,207,0.6) 114.1% );
+        width: 300px;
+        height: 200px; 
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;   
+    }
+        
+    section#ejercicios {
+        grid-area: ejercicios; 
+        background-image: linear-gradient( 129.1deg,  rgba(243,199,83,0.6) 26.8%, rgba(18,235,207,0.6) 114.1% );
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;   
+    }
+        
+    section#contactanos {
+        grid-area: contactanos; 
+        background-image: linear-gradient( 129.1deg,  rgba(243,199,83,0.6) 26.8%, rgba(18,235,207,0.6) 114.1% );
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;  
+    }
+        
+    section#preguntas {
+        grid-area: preguntas;
+        font-size: 2.6em;
+        width: auto;
+        height: auto;
+        background-color: rgba(255, 255, 255, .6);
+        padding: 20px;
+    }
+
+    section#externos1 {
+        grid-area: preguntas1;
+        font-size: 2em;
+        width: auto;
+        height: auto;
+        background-color: rgba(255, 255, 255, .6);
+        
+    }
+
+    }
+
+    .preguntas__titulo {
+        text-align: center;
+        color: red;
+    }
+/*inicio estilo nav*/
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+
+body {
+    background: white url(frutasmobile.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: black;
+    
+}
+
+
+a {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+
+
+.container {
+    margin: 0 auto;
+    max-width: auto;
+}
+
+main .container {
+    padding: 1em;
+}
+
+.screen-reader-text {
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px;
+}
+
+
+
+/* inicio nav*/
+nav {
+    background-color: #FF8235;
+    
+
+    color: #1d1f20;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: auto;
+    z-index: 9999;
+}
+
+/*** INPUT ***/
+nav input {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+/*** LABEL ***/
+nav label {
+    cursor: pointer;
+    display: block;
+    font: 2em/1 'Oswald', sans-serif;
+    padding: 0.5em;
+}
+
+/* Hamburger Icon */
+#menu-icon,
+#menu-icon:before,
+#menu-icon:after {
+    background: #1d1f20;
+    border-radius: 0.05em;
+    height: 0.2em;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+}
+
+#menu-icon {
+    display: inline-block;
+    margin: 0.4em 0;
+    max-width: 1em;
+    position: relative;
+}
+
+nav label #menu-icon {
+    float: right;
+}
+
+#menu-icon:before,
+#menu-icon:after {
+    content: '';
+    left: 0;
+    position: absolute;
+}
+
+#menu-icon:before {
+    top: -0.4em;
+}
+
+#menu-icon:after {
+    bottom: -0.4em;
+}
+
+/* Close Icon */
+nav input[type=checkbox]:checked + label #menu-icon {
+    background: transparent;
+}
+
+nav input[type=checkbox]:checked + label #menu-icon:before {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+nav input[type=checkbox]:checked + label #menu-icon:after {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+
+/*** MENU ***/
+/* Overlay */
+nav input:checked ~ #overlay {
+    background: #30E8BF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FF8235, #30E8BF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FF8235, #30E8BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+/* List */
+nav ul {
+    font-size: 1.5em;
+    list-style: none;
+    margin: 0;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+}
+
+nav input:checked ~ ul {
+    margin: 1em;
+    max-height: inherit;
+    opacity: 1;
+}
+
+nav ul > li {
+    margin: 0.5em 0;
+}
+
+nav ul a {
+    color: #1d1f20!important;
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media */
+nav ul#social-media > li {
+    display: inline-block;
+    font-size: 1.5em;
+    margin: 0.5em;
+}
+
+/*fin estilo nav*/
+
+
+
+/*inicio estilo menu-paginas*/
+
+i {
+    font-size: 60px;
+    display: block;
+    margin:10px auto;
+    background-color: rgba(255, 255, 255, .15);
+    width: 100px;
+    margin: 100px;
+    padding: 20px;
+    border-radius: 50%;
+
+
+}
+
+
+
+
+/*fin estilo menu-paginas*/
+
+
+/*inicio estilo pregunta frecuente*/
+
+#menu * { list-style:none;}
+#menu li{ line-height:180%;}
+#menu li a{color:#222; text-decoration:none;}
+#menu li a:before{ content:"\025b8"; color:#ddd; margin-right:4px;}
+#menu input[name="list"] {
+	position: absolute;
+	left: -1000em;
+	}
+#menu label:before{ content:"\025b8"; margin-right:4px;}
+#menu input:checked ~ label:before{ content:"\025be";}
+#menu .interior{display: none;}
+#menu input:checked ~ ul{display:block;}
+
+
+/*fin estilo pregunta frecuente*/
+
+/*inicio estilo externos*/
+
+
+.aside__image {
+    height: 250px;
+    width: 250px;
+    display: block;
+    margin: auto;
+    border-radius: 20%;
+    border: solid grey 3px;
+    
+}
+
+p.text__externo {
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+h2.titulo__externo {
+    font-size: 1.8em;
+    text-align: center;
+    color: red;
+}
 
 
