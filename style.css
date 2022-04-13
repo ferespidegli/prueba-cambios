@@ -998,70 +998,116 @@ h2.titulo__externo {
 @media only screen  
 and (min-width : 1023px) {
 
-    #grilla  {
+    #grilla {
         display: grid;
         grid-template-areas: 
             "nav nav nav"
             "header header header"
-            "pilares pilares externos1"
-            "programas programas externos1"
-            "recetas recetas externos1"
-            "ejercicios ejercicios externos1"
-            "contactanos contactanos externos1"
-            "preguntas preguntas externos1"
+            "pilares pilares pilares"
+            "programas programas programas"
+            "recetas recetas recetas"
+            "ejercicios ejercicios ejercicios"
+            "contactanos contactanos contactanos"
+            "preguntas preguntas preguntas"
+            "externos1 externos1 externos1"
             "footer footer footer";
-        grid-template-rows: 200px 200px 100px 100px 100px 100px 100px auto;
+        grid-template-rows: 60px 200px 100px 100px 100px 100px 100px auto;
         grid-template-columns: auto;
         background-color:beige ;
             
     }
 
 
-/*inicio estilo header*/    
+    /*inicio estilo header*/    
     header {
         grid-area: header;
-        margin: 20px;
+        margin: 0px;
         width: auto;
         height: auto;
         padding: 0px;
         background-color: rgba(255, 255, 255, .6);
         
         
+        
 
     }    
 
-
-
-
-#titulo {
-    font-size: 3.1em;
-    color: black;
+section#sec__pilar {
+    background-color: rgba(255, 255, 255, .6);
+    margin: 20px;
+    padding: 20px;
     text-align: center;
-    margin-top: 15px;
-    
 }
 
-/*fin estilo header*/
+section#sec__pilar p {
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+}
 
-/*inicio estilo footer*/
+    #titulo {
+        font-size: 2em;
+        color: rgb(29, 4, 16);
+        text-align: center;
+        
+    
+    }
+
+    /*fin estilo header*/
+
+    /*inicio estilo footer*/
    
 
-    footer {
+    footer.border {
         grid-area: footer;
         text-align: center;
         background-color: #30E8BF;
-        font-size: 2em;
-        height: auto;
+        font-size: 1em;
+        padding: 20px;
+        
+        
         
            
     }
 
-    i.icon__footer {
-        color: beige;
-
+    i#icon__footer.fa-solid.fa-map-location-dot {
+        color: white;
+        padding: 10px;
+        margin: auto;
+        display: block;
+        background-color: rgba(108, 121, 133, .3);
+        text-align: center;
     }
 
-/*inicio estilo footer*/
+iframe.mapa__icon {
+    height: 300px;
+    width: 300px;
+    
+}
+
+div.mapa {
+    background-color: rgba(255, 255, 255, .6);
+    margin: 20px;
+    text-align: center;
+}
+
+div.mapa p {
+    color: #222;
+    font-size: 2em;
+}
+
+h2.mapa-text {
+    text-align: center;
+    font-size: 2.2em;
+    color: red;
+
+}
+
+    div.iframe {
+        padding: auto;
+        margin: 36px;
+    }
+
+    /*inicio estilo footer*/
 
     p.texto{
         font-size: 1.2em;
@@ -1136,17 +1182,17 @@ and (min-width : 1023px) {
         
     section#preguntas {
         grid-area: preguntas;
-        font-size: 2.6em;
-        width: auto;
+        font-size: 20px;
+        
+        padding: 20px;
         height: auto;
         background-color: rgba(255, 255, 255, .6);
-        padding: 20px;
     }
 
     section#externos1 {
         grid-area: preguntas1;
-        font-size: 2em;
-        width: auto;
+        font-size: 20px;
+        padding: 40px;
         height: auto;
         background-color: rgba(255, 255, 255, .6);
         
@@ -1158,256 +1204,365 @@ and (min-width : 1023px) {
         text-align: center;
         color: red;
     }
-/*inicio estilo nav*/
+    /*inicio estilo nav*/
 
-*,
-*:before,
-*:after {
+    *,
+    *:before,
+    *:after {
     box-sizing: border-box;
-}
+    }
 
-html,
 
-body {
-    background: white url(frutasmobile.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size:cover;
-    color: black;
+
+    body {
+        background: white url(frutas.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size:cover;
+        color: black;
     
-}
+    }
+
+    body#ejercicios__fondo {
+        background: white url(fondoejercicosescritorio.jpg) !important;
+        background-attachment: fixed !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+    }
+    
+    section#sec__ejercicios {
+        background-color: rgba(255, 255, 255, .6);
+        margin-top: 20px;
+        padding: 10px;
+        font-size: 1.2em;
+
+    }
+    
+    .nav__seccion {
+        color: #1d1f20 !important;
+        font-size: 1em;
+    }
+
+    img.image__ejercicios {
+        width: 380px;
+        height: 380px;
+    }
+
+    a   {
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        text-decoration: none;
+    }
 
 
-a {
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-}
+
+    .container {
+        margin: 0 auto;
+        max-width: auto;
+    }
+
+    main .container {
+        padding: 1em;
+    }
+
+    .screen-reader-text {
+        clip: rect(1px 1px 1px 1px);
+        clip: rect(1px, 1px, 1px, 1px);
+        height: 1px;
+        overflow: hidden;
+        position: absolute !important;
+        width: 1px;
+    }
 
 
 
-.container {
-    margin: 0 auto;
-    max-width: auto;
-}
-
-main .container {
-    padding: 1em;
-}
-
-.screen-reader-text {
-    clip: rect(1px 1px 1px 1px);
-    clip: rect(1px, 1px, 1px, 1px);
-    height: 1px;
-    overflow: hidden;
-    position: absolute !important;
-    width: 1px;
-}
-
-
-
-/* inicio nav*/
-nav {
-    background-color: #FF8235;
+    /* inicio nav*/
+    nav {
+        background-color: #FF8235;
     
 
-    color: #1d1f20;
-    left: 0;
-    position: relative;
-    top: 0;
-    width: auto;
-    z-index: 9999;
-}
+        color: #1d1f20;
+        left: 0;
+        position: relative;
+        top: 0;
+        width: auto;
+        z-index: 9999;
+    }
 
-/*** INPUT ***/
-nav input {
-    opacity: 0;
-    position: absolute;
-    z-index: -1;
-}
+    /*** INPUT ***/
+    nav input {
+        opacity: 0;
+        position: absolute;
+        z-index: -1;
+    }
 
-/*** LABEL ***/
-nav label {
-    cursor: pointer;
-    display: block;
-    font: 2em/1 'Oswald', sans-serif;
-    padding: 0.5em;
-}
+    /*** LABEL ***/
+    nav label {
+        cursor: pointer;
+        display: block;
+        font: 2em/1 'Oswald', sans-serif;
+        padding: 0.5em;
+    }
 
-/* Hamburger Icon */
-#menu-icon,
-#menu-icon:before,
-#menu-icon:after {
-    background: #1d1f20;
-    border-radius: 0.05em;
-    height: 0.2em;
-    transition: all 0.2s ease-in-out;
-    width: 100%;
-}
+    /* Hamburger Icon */
+    #menu-icon,
+    #menu-icon:before,
+    #menu-icon:after {
+        background: #1d1f20;
+        border-radius: 0.05em;
+        height: 0.2em;
+        transition: all 0.2s ease-in-out;
+        width: 100%;
+    }
 
-#menu-icon {
-    display: inline-block;
-    margin: 0.4em 0;
-    max-width: 1em;
-    position: relative;
-}
+    #menu-icon {
+        display: inline-block;
+        margin: 0.4em 0;
+        max-width: 1em;
+        position: relative;
+    }
 
-nav label #menu-icon {
-    float: right;
-}
+    nav label #menu-icon {
+        float: right;
+    }
 
-#menu-icon:before,
-#menu-icon:after {
-    content: '';
-    left: 0;
-    position: absolute;
-}
+    #menu-icon:before,
+    #menu-icon:after {
+        content: '';
+        left: 0;
+        position: absolute;
+    }   
 
-#menu-icon:before {
-    top: -0.4em;
-}
+    #menu-icon:before {
+        top: -0.4em;
+    }
 
-#menu-icon:after {
-    bottom: -0.4em;
-}
+    #menu-icon:after {
+        bottom: -0.4em;
+    }
 
-/* Close Icon */
-nav input[type=checkbox]:checked + label #menu-icon {
+    /* Close Icon */
+    nav input[type=checkbox]:checked + label #menu-icon {
     background: transparent;
-}
+    }
 
-nav input[type=checkbox]:checked + label #menu-icon:before {
-    top: 0;
-    transform: rotate(-45deg);
-}
+    nav input[type=checkbox]:checked + label #menu-icon:before {
+        top: 0;
+        transform: rotate(-45deg);
+    }
 
-nav input[type=checkbox]:checked + label #menu-icon:after {
-    bottom: 0;
-    transform: rotate(45deg);
-}
-
-
-/*** MENU ***/
-/* Overlay */
-nav input:checked ~ #overlay {
-    background: #30E8BF;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #FF8235, #30E8BF);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #FF8235, #30E8BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    bottom: 0;
-    left: 0;
-    height: 100%;
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 100%;
-    z-index: -1;
-}
-
-/* List */
-nav ul {
-    font-size: 1.5em;
-    list-style: none;
-    margin: 0;
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    padding: 0;
-    text-align: center;
-}
-
-nav input:checked ~ ul {
-    margin: 1em;
-    max-height: inherit;
-    opacity: 1;
-}
-
-nav ul > li {
-    margin: 0.5em 0;
-}
-
-nav ul a {
-    color: #1d1f20!important;
-    text-decoration: none;
-}
-
-nav ul a:hover {
-    text-decoration: underline;
-}
-
-/* Social Media */
-nav ul#social-media > li {
-    display: inline-block;
-    font-size: 1.5em;
-    margin: 0.5em;
-}
-
-/*fin estilo nav*/
+    nav input[type=checkbox]:checked + label #menu-icon:after {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
 
 
+    /*** MENU ***/
+    /* Overlay */
+    nav input:checked ~ #overlay {
+        background: #30E8BF;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #FF8235, #30E8BF);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #FF8235, #30E8BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-/*inicio estilo menu-paginas*/
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+    }
 
-i {
-    font-size: 60px;
-    display: block;
-    margin:10px auto;
-    background-color: rgba(255, 255, 255, .15);
-    width: 100px;
-    margin: 100px;
-    padding: 20px;
-    border-radius: 50%;
+    /* List */
+    nav ul {
+        font-size: 1.5em;
+        list-style: none;
+        margin: 0;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        padding: 0;
+        text-align: center;
+    }
+
+    nav input:checked ~ ul {
+        margin: 1em;
+        max-height: inherit;
+        opacity: 1;
+    }
+
+    nav ul > li {
+        margin: 0.5em 0;
+    }
+
+    nav ul a {
+        color: #1d1f20!important;
+        text-decoration: none;
+    }
+
+    nav ul a:hover {
+        text-decoration: underline;
+    }
+
+    /* Social Media */
+    nav ul#social-media > li {
+        display: inline-block;
+        font-size: 1.5em;
+        margin: 0.5em;
+    }
+
+    /*fin estilo nav*/
+
+    iframe {
+        width: 250px;
+        height: 250px;
+    }
+
+    section#descenso {
+        background-color: rgba(255, 255, 255, .6);
+        padding: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    img.receta__img {
+        height: 400px;
+        width: 400x;
+        margin: 80px;
+        border: #222 solid 2px;
+        
+    }
+
+    #menu__recetas {
+        display: grid;
+        grid-template-areas: 
+            "nav"
+            "header"
+            "sec_recetas"
+            "footer";
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        background-color: rgba(255, 255, 255, .6);
+        margin-top: 20px;
+        padding: 20px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.3;
+        
+        }
+
+        #sec__contacto {
+            display: grid;
+            grid-template-areas: 
+                "nav nav"
+                "header header"
+                "sec__contacto sec__contaco"
+                "footer footer";
+            grid-template-rows: auto 600px auto auto;
+            grid-template-columns: auto;
+            background-color: rgba(255, 255, 255, .6);
+                
+        }
 
 
-}
+        #sec__contacto {
+            display: grid;
+            grid-template-areas: 
+                "nav header header"
+                "nav sec_contacto externos"
+                "nav footer footer";
+            grid-template-rows: 430px;
+            grid-template-columns: 100%;
+            grid-column-gap: 10px;
+            grid-row-gap: 20px;
+            
+            
+        }
+        
+        section#sec__contacto {
+            grid-area: sec_contacto;
+            margin: 60px;
+            text-align: center;
+            text-align: left;
+        }
+        input.dato__1 {
+            width: 280px;
+            height: 30px;
+        }
+        input.dato__2 {
+            width: 280px;
+            height: 120px;
+        }
+        p.form {
+            font-size: 1.5em;
+            font-family: 'Montserrat', sans-serif;
+        }
+        form.form {
+            padding: 10px;
+        }
+   
+
+    /*inicio estilo menu-paginas*/
+
+    i#icon__submenu {
+        font-size: 40px;
+        margin:auto;
+        background-color: rgba(126, 24, 24, 0.15);
+        width: 100px;
+        margin: 100px;
+        border-radius: 50%;
+        text-align: center;
+
+
+    }
 
 
 
 
-/*fin estilo menu-paginas*/
+    /*fin estilo menu-paginas*/
 
 
-/*inicio estilo pregunta frecuente*/
+    /*inicio estilo pregunta frecuente*/
 
-#menu * { list-style:none;}
-#menu li{ line-height:180%;}
-#menu li a{color:#222; text-decoration:none;}
-#menu li a:before{ content:"\025b8"; color:#ddd; margin-right:4px;}
-#menu input[name="list"] {
-	position: absolute;
-	left: -1000em;
+    #menu * { list-style:none;}
+    #menu li{ line-height:180%;}
+    #menu li a{color:#222; text-decoration:none;}
+    #menu li a:before{ content:"\025b8"; color:#ddd; margin-right:4px;}
+    #menu input[name="list"] {
+	    position: absolute;
+	    left: -1000em;
 	}
-#menu label:before{ content:"\025b8"; margin-right:4px;}
-#menu input:checked ~ label:before{ content:"\025be";}
-#menu .interior{display: none;}
-#menu input:checked ~ ul{display:block;}
+    #menu label:before{ content:"\025b8"; margin-right:4px;}
+    #menu input:checked ~ label:before{ content:"\025be";}
+    #menu .interior{display: none;}
+    #menu input:checked ~ ul{display:block;}
 
 
-/*fin estilo pregunta frecuente*/
+    /*fin estilo pregunta frecuente*/
 
-/*inicio estilo externos*/
+    /*inicio estilo externos*/
 
 
-.aside__image {
-    height: 250px;
-    width: 250px;
-    display: block;
-    margin: auto;
-    border-radius: 20%;
-    border: solid grey 3px;
+    .aside__image {
+        height: 200px;
+        width: 200px;
+        
+        padding-left: 10px;
     
-}
+    }
 
-p.text__externo {
-    font-size: 1.2em;
-    text-align: center;
-    text-decoration: none;
-    color: black;
-}
+    p.text__externo {
+        font-size: 1.2em;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+    }
 
-h2.titulo__externo {
-    font-size: 1.8em;
-    text-align: center;
-    color: red;
-}
+    h2.titulo__externo {
+        font-size: 1.8em;
+        text-align: center;
+        color: red;
+    }
 
 
