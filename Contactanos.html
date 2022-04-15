@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>Jessica Espinoza Deglise</title>
+        <title>Nutrises</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">    
         <script src="https://kit.fontawesome.com/cbaa542b69.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,28 +11,50 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     </head>
     <body>
-        
-        <nav>
-            <div class="container">
-                <input id="responsive-menu" type="checkbox">
-                <label for="responsive-menu">Menu <span id="menu-icon"></span></label>
-                <div id="overlay"></div>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Contactanos.html">Contactanos</a></li>
-                    
-                    <li><a href=""><i class="fab fa-whatsapp"></i><span class="screen-reader-text">Whatsapp</span></a>
-                    </li>
-                    <li><a href=""><i class="fab fa-linkedin"></i><span class="screen-reader-text">LinkedIn</span></a>
-                    </li>
-                    <li><a href=""><i class="fab fa-instagram"></i><span class="screen-reader-text">Instagram</span></a>
-                    </li>
-        
-                    </li>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(243,199,83,0.6)">
+            <div class="container-fluid" style="background-color: rgba(243,199,83,0.6)" >
+              <a class="navbar-brand"   href="#">Nutrise</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Contactanos.html">Contactanos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="Nuestros Pilares.html">Nuestros Pilares</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Programas.html">Programas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Recetas Saludables.html">Recetas Saludables</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Rutina de ejercicios.html">Rutina de Ejercicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-whatsapp"></i></a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#"><i class="fab fa-linkedin"></i></a>
+                  </li>
                 </ul>
+              </div>
             </div>
+           
         </nav>
     
         <header>
@@ -41,27 +64,19 @@
         </header>
 
         <section id="sec__contacto">
+            <label for="floatingInput">Nombre y apellido</label>
+            <input class="form-control form-control-lg" type="text" placeholder="Nombre y apellido" aria-label="Nombre y apellido">
+            <label for="floatingInput">Direccion de Email</label>
+            <input type="email" class="form-control" id="floatingInput" placeholder="email@example.com">
+            
 
-            <form class="form">
-                <h2 class="preguntas__titulo">Contacto</h2>
-                <br>
-                
-                <p class="form" >Nombre</p>
-                <p type="Nombre:"><input class="dato__1" placeholder="Escribe tu Nombre"></input></p>
-                <br>
-                <p class="form" >Email</p>
-                <p type="Email:"><input class="dato__1" placeholder="Correo para contactarte"></input></p>
-                <br>
-                
-                <p class="form" >Mensaje</p>
-                <p type="Mensaje:"><input class="dato__2" placeholder="Motivo del contacto"></input></p>
-                <br>
-        
-                <button>Enviar</button>
-                <div>
-                <br>
-                
-                
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Motivo del contacto</label>
+              </div>
+              <br>
+              <br>
+              <br>
                 <span class="fa fa-phone"></span>+54 3764646509
                 <br>
                 <br>
