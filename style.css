@@ -1,230 +1,173 @@
 @import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
 @import url(https://fonts.googleapis.com/css?family=Oswald:400|Raleway:400,700,400italic,700italic);
-
-
 * {
-    margin: 0px;
-    padding: 0px;
-    
-}
+  margin: 0px;
+  padding: 0px; }
 
- /*inicio estilo header*/    
- header {
-    margin: 0px;
-    width: auto;
-    height: auto;
-    padding: 0px;
-    background-color: rgba(255, 255, 255, .6);
-}
+/*inicio estilo header*/
+header {
+  margin: 0px;
+  width: auto;
+  height: auto;
+  padding: 0px;
+  background-color: rgba(255, 255, 255, 0.6); }
 
 #titulo {
-    font-size: 3em;
-    color: rgb(29, 4, 16);
-    text-align: center;
-    margin: 20px;
-    
-
-}
+  font-size: 3em;
+  color: #1d0410;
+  text-align: center;
+  margin: 20px; }
 
 body {
-    background: white url(imagenes/frutas.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size:cover;
-    color: black;
-
-}
-
-
+  background: white url(imagenes/frutas.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black; }
 
 div.row {
-    background-image: linear-gradient( 129.1deg,  rgba(243,199,83,0.6) 26.8%, rgba(18,235,207,0.6) 114.1% );
-    padding: 10px;
-}
-
-
+  background-image: linear-gradient(129.1deg, rgba(243, 199, 83, 0.6) 26.8%, rgba(18, 235, 207, 0.6) 114.1%);
+  padding: 10px; }
 
 .preguntas__titulo {
-    text-align: center;
-    color: red;
-}
+  text-align: center;
+  color: red; }
 
 section#preguntas__frecuente {
-    background-color: rgba(255, 255, 255, .6);
-    
-}
+  background-color: rgba(255, 255, 255, 0.6); }
 
 img.cartoon {
-    height: 300px;
-}
+  height: 300px; }
 
 section#menu__recetas {
-    background-color: rgba(255, 255, 255, .6);
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-}
+  background-color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem; }
 
 section#sec__pilar {
-    background-color: rgba(255, 255, 255, .6);
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-    
-}
+  background-color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem; }
 
 section#sec__ejercicios {
-    background-color: rgba(255, 255, 255, .6);
-    margin-top: 20px;
-    padding: 10px;
-    font-size: 1.2em;
-}
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1.2em; }
 
 section#sec__contacto {
-    background-color: rgba(255, 255, 255, .6);
-    margin-top: 20px;
-    padding: 10px;
-    font-size: 1.2em;
-}
-
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1.2em; }
 
 body#ejercicios__fondo {
-    background: white url(imagenes/fondoejercicosescritorio.jpg) !important;
-    background-attachment: fixed !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-}
+  background: white url(imagenes/fondoejercicosescritorio.jpg) !important;
+  background-attachment: fixed !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important; }
+
 section#descenso {
-    background-color: rgba(255, 255, 255, .6);
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-    padding: 10px;
-}
+  background-color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  padding: 10px; }
 
 section#externos {
-    background-color: rgba(255, 255, 255, .6);
-}
+  background-color: rgba(255, 255, 255, 0.6); }
 
 i#icon__submenu {
-    color: white;
-    font-size: 6rem;
-    border-radius: solid black 1rem;
-}
+  color: white;
+  font-size: 6rem;
+  border-radius: solid black 1rem; }
+
 p.texto {
-    font-size: 2em;
-    font-family: 'Montserrat', sans-serif;
-    
-    
-}
-
-
+  font-size: 2em;
+  font-family: 'Montserrat', sans-serif; }
 
 /*inicio estilo footer*/
-   
-
 footer.border {
-    
-    text-align: center;
-    background-color: rgba(243,199,83,1);
-    font-size: 1em;
-    padding: 20px;
-    display: block;
-    
-    
-       
-}
+  text-align: center;
+  background-color: #f3c753;
+  font-size: 1em;
+  padding: 20px;
+  display: block; }
 
 i#icon__footer.fa-solid.fa-map-location-dot {
-    color: white;
-    padding: 10px;
-    margin: auto;
-    display: block;
-    background-color: rgba(108, 121, 133, .3);
-    text-align: center;
-}
+  color: white;
+  padding: 10px;
+  margin: auto;
+  display: block;
+  background-color: rgba(108, 121, 133, 0.3);
+  text-align: center; }
 
 iframe.mapa__icon {
-height: 300px;
-width: 300px;
-
-}
+  height: 300px;
+  width: 300px; }
 
 div.mapa {
-background-color: rgba(255, 255, 255, .6);
-margin: 20px;
-text-align: center;
-}
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: 20px;
+  text-align: center; }
 
 div.mapa p {
-color: #222;
-font-size: 2em;
-}
+  color: #222;
+  font-size: 2em; }
 
 h2.mapa-text {
-text-align: center;
-font-size: 2.2em;
-color: red;
-
-}
+  text-align: center;
+  font-size: 2.2em;
+  color: red; }
 
 a.btn.btn-primary {
-
-    color: #222;
-    background-color: rgba(243,199,83,1);
-    border-color: rgba(243,199,83,1)
-}
+  color: #222;
+  background-color: #f3c753;
+  border-color: #f3c753; }
 
 div.iframe {
-    padding: auto;
-    margin: 36px;
-}
+  padding: auto;
+  margin: 36px; }
 
-@media screen and (max-width: 767px){
+ul.nav__seccion {
+  list-style: square; }
+  ul.nav__seccion li.nav__seccion {
+    padding: 10px;
+    display: block; }
+    ul.nav__seccion li.nav__seccion a {
+      font-size: 1em;
+      color: red; }
+      ul.nav__seccion li.nav__seccion a:hover {
+        color: blueviolet; }
 
-
-    body {
-        background: white url(imagenes/frutasmobile.jpg);
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size:cover;
-        color: black;
-        margin: 10px;
-    
-    }
-
-    img.cartoon {
-
-        height: 200px;
-    }
-
-
-    #titulo {
-        font-size: 2em;
-        color: rgb(29, 4, 16);
-        text-align: center;
-        margin-bottom: 30px;
-        padding-bottom: 20px;
-        
-    }
-
-    body#ejercicios__fondo {
-        background: white url(imagenes/fondoejercicos.jpg) !important;
-        background-attachment: fixed !important;
-        background-repeat: no-repeat !important;
-        background-size: cover !important;
-    }
-
-    section#sec__ejercicios {
-        background-color: rgba(255, 255, 255, .6);
-        margin-top: 20px;
-        padding: 10px;
-        font-size: 0.9em;
-
-    }
-    .image__ejercicios {
-        height: 200px;
-        width: 370px;
-    }
-    
-}
+@media screen and (max-width: 767px) {
+  body {
+    background: white url(imagenes/frutasmobile.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    margin: 10px; }
+  img.cartoon {
+    height: 200px; }
+  #titulo {
+    font-size: 2em;
+    color: #1d0410;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px; }
+  body#ejercicios__fondo {
+    background: white url(imagenes/fondoejercicos.jpg) !important;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important; }
+  section#sec__ejercicios {
+    background-color: rgba(255, 255, 255, 0.6);
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 0.9em; }
+  .image__ejercicios {
+    height: 200px;
+    width: 370px; } }
