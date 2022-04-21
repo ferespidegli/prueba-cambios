@@ -18,9 +18,10 @@
 }
 
 #titulo {
-    font-size: 2em;
+    font-size: 3em;
     color: rgb(29, 4, 16);
     text-align: center;
+    margin: 20px;
     
 
 }
@@ -36,10 +37,12 @@ body {
 
 
 
-div.col-md-6.col-xs-6.text-center {
+div.row {
     background-image: linear-gradient( 129.1deg,  rgba(243,199,83,0.6) 26.8%, rgba(18,235,207,0.6) 114.1% );
-    border-radius: 50%;
+    padding: 10px;
 }
+
+
 
 .preguntas__titulo {
     text-align: center;
@@ -48,6 +51,11 @@ div.col-md-6.col-xs-6.text-center {
 
 section#preguntas__frecuente {
     background-color: rgba(255, 255, 255, .6);
+    
+}
+
+img.cartoon {
+    height: 300px;
 }
 
 section#menu__recetas {
@@ -160,7 +168,53 @@ color: red;
 
 }
 
+a.btn.btn-primary {
+
+    color: #222;
+    background-color: rgba(243,199,83,1);
+    border-color: rgba(243,199,83,1)
+}
+
 div.iframe {
     padding: auto;
     margin: 36px;
+}
+
+@media screen and (max-width: 767px){
+
+
+    body {
+        background: white url(frutasmobile.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size:cover;
+        color: black;
+        margin: 10px;
+    
+    }
+
+    img.cartoon {
+
+        height: 200px;
+    }
+
+
+    #titulo {
+        font-size: 2em;
+        color: rgb(29, 4, 16);
+        text-align: center;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        
+    }
+
+    body#ejercicios__fondo {
+        background: white url(fondoejercicos.jpg) !important;
+        background-attachment: fixed !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+    }
+
+
+    
 }
