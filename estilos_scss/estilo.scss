@@ -1,6 +1,14 @@
 @import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
 @import url(https://fonts.googleapis.com/css?family=Oswald:400|Raleway:400,700,400italic,700italic);
 
+/* Variables*/
+
+$title-color: black;
+$title-font: 3em 'Montserrat', sans-serif;
+$h2-font: 1.5em 'Montserrat', sans-serif;
+
+
+
 
 * {
     margin: 0px;
@@ -8,7 +16,7 @@
     
 }
 nav.navbar.navbar-expand-lg.navbar-light {
-    background: linear-gradient(90deg, rgb(155, 154, 228) 0%, rgb(33, 18, 122) 100%);
+    background: #85586F
     }
 
     #insta {
@@ -29,30 +37,26 @@ nav.navbar.navbar-expand-lg.navbar-light {
     width: auto;
     height: auto;
     padding: 10px;
-    background-color: #ffffff10;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    background-color: #F8ECD1;
+    
+    
 }
 
 #titulo {
-    font-size: 3em;
-    color: rgb(29, 4, 16);
+    font: $title-font;
+    color: $title-color;
     text-align: center;
-    background-color: #ffffff10;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
     justify-content: center;
+    
     
     
 
 }
 
 body {
-    background: white url(imagenes/frutas.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size:cover;
+    background: white;
     color: black;
+    font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -73,25 +77,30 @@ img.link-submenu {
         
 }
 
-.preguntas__titulo {
+.sub__titulos {
     text-align: center;
-    color: red;
-    display: inline-block;
+    font: $h2-font;
+    color: $title-color;
+    display: block;
+    padding-top: 5px;
 }
 
 section#preguntas__frecuente {
-    background-color: #ffffff10;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    background-color: #F8ECD1;
+    
     
 }
 
 
 
+
+
+
+
+
+
 section#menu__recetas {
-    background-color: #ffffff10;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
@@ -103,9 +112,7 @@ section#sec__pilar {
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
     h2 {
-        background-color: #ffffff10;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+        
     margin: 10px;
     }
     img.cartoon {
@@ -117,25 +124,19 @@ section#sec__pilar {
 
 
 p.pilar2 {
-    background-color: #ffffff10;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    
     margin: 60px;
 }
 
 section#sec__ejercicios {
-    background-color: #ffffff10;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    
     margin-top: 20px;
     padding: 10px;
     font-size: 1.2em;
 }
 
 section#sec__contacto {
-    background-color: #ffffff10;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    
     margin-top: 20px;
     padding: 10px;
     font-size: 1.2em;
@@ -143,15 +144,11 @@ section#sec__contacto {
 
 
 body#ejercicios__fondo {
-    background: white url(imagenes/fondoejercicosescritorio.jpg) !important;
-    background-attachment: fixed !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
+    background: white;
+    
 }
 section#descenso {
-    background-color: #ffffff10;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
@@ -160,9 +157,12 @@ section#descenso {
 }
 
 section#externos {
-    background-color: #ffffff10;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    background-color: #F8ECD1;
+    padding-bottom: 5px;
+    div.card-body {
+        font-size: 0.5em;
+    }
+
 }
 
 i#icon__submenu {
@@ -182,18 +182,20 @@ p.texto {
 /*inicio estilo footer*/
    
 
-footer.border {
+footer {
     
     text-align: center;
-    background: #634fd1;
-    background: linear-gradient(90deg, rgb(155, 154, 228) 0%, rgb(33, 18, 122) 100%);
+    background: #85586F;
     font-size: 1em;
     padding: 20px;
     display: block;
     
-    
-    
+   
        
+}
+
+div.footer {
+    display: inline-block;
 }
 
 i#icon__footer.fa-solid.fa-map-location-dot {
@@ -213,9 +215,7 @@ width: 300px;
 }
 
 div.mapa {
-    background-color: #ffffff10;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    
 margin: 20px;
 text-align: center;
 }
@@ -232,14 +232,7 @@ color: red;
 
 }
 
-a.btn.btn-primary {
 
-    
-    background: #634fd1;
-    background: linear-gradient(90deg, rgb(155, 154, 228) 0%, rgb(33, 18, 122) 100%);
-    border: 2px solid linear-gradient(90deg, rgb(155, 154, 228) 0%, rgb(33, 18, 122) 100%);
-    color: white;
-}
 
 div.iframe {
     padding: auto;
@@ -283,11 +276,10 @@ ul.nav__seccion {
     letter-spacing: 1px;
     font-weight: 300;
     color: white;
-    background: #634fd1;
-  background: linear-gradient(90deg, rgb(155, 154, 228) 0%, rgb(33, 18, 122) 100%);
+    background: #AC7D88;
     border: none;
     border-radius: 300px;
-    box-shadow: 12px 12px 24px rgba(103, 79, 209, 0.64);
+    box-shadow: 12px 12px 24px #DEB6AB;
     
     cursor: pointer;
     outline: none;
@@ -300,8 +292,8 @@ ul.nav__seccion {
     border-radius: 1000px;
     min-width: calc(200px + 12px);
     min-height: calc(60px + 12px);
-    border: 6px solid #0026ff;
-    box-shadow: 0 0 60px rgba(25, 0, 255, 0.64);
+    border: 6px solid #85586F;
+    box-shadow: 0 0 60px #85586F;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -363,10 +355,7 @@ ul.nav__seccion {
 
 
     body {
-        background: white url(imagenes/frutasmobile.jpg);
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size:cover;
+        background: white ;
         color: black;
         margin: 10px;
     
@@ -389,16 +378,12 @@ ul.nav__seccion {
     }
 
     body#ejercicios__fondo {
-        background: white url(imagenes/fondoejercicos.jpg) !important;
-        background-attachment: fixed !important;
-        background-repeat: no-repeat !important;
-        background-size: cover !important;
+        background: white 
+     
     }
 
     section#sec__ejercicios {
-        background-color: #ffffff10;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+        
         margin-top: 20px;
         padding: 10px;
         font-size: 0.9em;
