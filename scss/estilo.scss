@@ -1,12 +1,15 @@
+
+
 @import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
 @import url(https://fonts.googleapis.com/css?family=Oswald:400|Raleway:400,700,400italic,700italic);
 
 /* Variables*/
 
 $title-color: black;
-$title-font: 3em 'Montserrat', sans-serif;
+$title-font: 2em 'Montserrat', sans-serif;
 $h2-font: 1.5em 'Montserrat', sans-serif;
-
+$h2-color: #85586F;
+$background-info: #F8ECD1;
 
 
 
@@ -50,6 +53,21 @@ nav.navbar.navbar-expand-lg.navbar-light {
     
     
     
+    
+
+}
+h2#titulo {
+    font: $title-font;
+    color: $title-color;
+}
+
+.preguntas__titulo {
+
+    font: $h2-font;
+    color: $h2-color;
+
+
+
 
 }
 
@@ -104,6 +122,7 @@ section#menu__recetas {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
+    background-color: $background-info;
 }
 
 section#sec__pilar {
@@ -111,6 +130,7 @@ section#sec__pilar {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
+    background-color: $background-info;
     h2 {
         
     margin: 10px;
@@ -157,7 +177,7 @@ section#descenso {
 }
 
 section#externos {
-    background-color: #F8ECD1;
+    background-color: $background-info;
     padding-bottom: 5px;
     div.card-body {
         font-size: 0.5em;
@@ -170,8 +190,8 @@ i#icon__submenu {
     font-size: 6rem;
     border-radius: solid black 1rem;
 }
-p.texto {
-    font-size: 2em;
+p {
+    font-size: .6em;
     font-family: 'Montserrat', sans-serif;
     
     
@@ -323,10 +343,8 @@ ul.nav__seccion {
 
 
     div.row {
-        background-color: #ffffff10;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    margin: 10px;
+        
+        margin: 10px;
    
 
         img.cartoon {

@@ -24,18 +24,10 @@ header {
   background-color: #F8ECD1; }
 
 #titulo {
-  font: 2em "Montserrat", sans-serif;
+  font: 3em "Montserrat", sans-serif;
   color: black;
   text-align: center;
   justify-content: center; }
-
-h2#titulo {
-  font: 2em "Montserrat", sans-serif;
-  color: black; }
-
-.preguntas__titulo {
-  font: 1.5em "Montserrat", sans-serif;
-  color: #85586F; }
 
 body {
   background: white;
@@ -65,14 +57,12 @@ section#preguntas__frecuente {
 section#menu__recetas {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
-  background-color: #F8ECD1; }
+  font-size: 1rem; }
 
 section#sec__pilar {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  font-size: 2rem;
-  background-color: #F8ECD1; }
+  font-size: 2rem; }
   section#sec__pilar h2 {
     margin: 10px; }
   section#sec__pilar img.cartoon {
@@ -112,8 +102,8 @@ i#icon__submenu {
   font-size: 6rem;
   border-radius: solid black 1rem; }
 
-p {
-  font-size: .6em;
+p.texto {
+  font-size: 2em;
   font-family: 'Montserrat', sans-serif; }
 
 /*inicio estilo footer*/
@@ -217,6 +207,9 @@ button:hover::after, button:focus::after {
   display: none; }
 
 div.row {
+  background-color: #ffffff10;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   margin: 10px; }
   div.row img.cartoon {
     height: 200px;
