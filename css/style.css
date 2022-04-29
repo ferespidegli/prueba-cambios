@@ -29,9 +29,18 @@ header {
   text-align: center;
   justify-content: center; }
 
+.col-md-3.col-xs-3.text-center {
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif; }
+
+.col-md-9.col-xs-6.text-center {
+  background-color: #F8ECD1;
+  font-size: 0.9em;
+  padding: 10px; }
+
 h2#titulo {
-  font: 2em "Montserrat", sans-serif;
-  color: black; }
+  font-size: 2em;
+  color: #85586F; }
 
 .preguntas__titulo {
   font: 1.5em "Montserrat", sans-serif;
@@ -71,8 +80,7 @@ section#menu__recetas {
 section#sec__pilar {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  font-size: 2rem;
-  background-color: #F8ECD1; }
+  font-size: 2rem; }
   section#sec__pilar h2 {
     margin: 10px; }
   section#sec__pilar img.cartoon {
@@ -84,7 +92,20 @@ p.pilar2 {
 section#sec__ejercicios {
   margin-top: 20px;
   padding: 10px;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  text-align: center; }
+  section#sec__ejercicios ul {
+    text-align: start; }
+  section#sec__ejercicios .referencias {
+    text-align: start; }
+
+img.image__ejercicios {
+  display: block;
+  border-radius: 10%;
+  margin: 0 auto;
+  padding: 10px;
+  width: 700px;
+  height: 500px; }
 
 section#sec__contacto {
   margin-top: 20px;
@@ -113,7 +134,7 @@ i#icon__submenu {
   border-radius: solid black 1rem; }
 
 p {
-  font-size: .6em;
+  font-size: 1em;
   font-family: 'Montserrat', sans-serif; }
 
 /*inicio estilo footer*/
@@ -126,6 +147,9 @@ footer {
 
 div.footer {
   display: inline-block; }
+
+p.texto {
+  font-size: 1.5em; }
 
 i#icon__footer.fa-solid.fa-map-location-dot {
   color: black;
@@ -216,6 +240,9 @@ button:hover::after, button:focus::after {
   animation: none;
   display: none; }
 
+p.footer {
+  font: 1.5em "Montserrat", sans-serif; }
+
 div.row {
   margin: 10px; }
   div.row img.cartoon {
@@ -233,15 +260,19 @@ div.row {
     background: white;
     color: black;
     margin: 10px; }
-  img.cartoon {
-    height: 200px;
-    width: 300px; }
+  section#sec__pilar {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em; }
+    section#sec__pilar h2.preguntas__titulo {
+      font-size: 1.8em;
+      margin: 5px; }
+    section#sec__pilar img.cartoon {
+      width: 400px; }
   #titulo {
     font-size: 2em;
     color: #1d0410;
-    text-align: center;
-    margin-bottom: 30px;
-    padding-bottom: 20px; }
+    text-align: center; }
   body#ejercicios__fondo {
     background: white; }
   section#sec__ejercicios {
@@ -255,4 +286,22 @@ div.row {
     border-radius: 50%;
     width: 200px;
     height: 200px;
-    margin-top: 50px; } }
+    margin-top: 50px; }
+  section#sec__ejercicios {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: center; }
+    section#sec__ejercicios ul {
+      text-align: start; }
+    section#sec__ejercicios .referencias {
+      text-align: start; }
+    section#sec__ejercicios span {
+      font-size: 1em;
+      text-align: justify; }
+  img.image__ejercicios {
+    display: block;
+    border-radius: 10%;
+    margin: 0 auto;
+    width: 380px;
+    height: 200px; } }

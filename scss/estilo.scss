@@ -56,9 +56,22 @@ nav.navbar.navbar-expand-lg.navbar-light {
     
 
 }
+
+.col-md-3.col-xs-3.text-center {
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.col-md-9.col-xs-6.text-center {
+    background-color: #F8ECD1;
+    font-size: 0.9em;
+    padding: 10px;
+}
+
 h2#titulo {
-    font: $title-font;
-    color: $title-color;
+    font-size: 2em;
+    color: #85586F;
 }
 
 .preguntas__titulo {
@@ -130,7 +143,7 @@ section#sec__pilar {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
-    background-color: $background-info;
+    
     h2 {
         
     margin: 10px;
@@ -153,6 +166,22 @@ section#sec__ejercicios {
     margin-top: 20px;
     padding: 10px;
     font-size: 1.2em;
+    text-align: center;
+    ul {
+        text-align: start;
+    }
+    .referencias {
+        text-align: start;
+    }
+}
+
+img.image__ejercicios {
+    display: block;
+    border-radius: 10%;
+    margin: 0 auto;
+    padding: 10px;
+    width: 700px;
+    height: 500px;
 }
 
 section#sec__contacto {
@@ -191,7 +220,7 @@ i#icon__submenu {
     border-radius: solid black 1rem;
 }
 p {
-    font-size: .6em;
+    font-size: 1em;
     font-family: 'Montserrat', sans-serif;
     
     
@@ -217,6 +246,10 @@ footer {
 div.footer {
     display: inline-block;
 }
+p.texto {
+        font-size: 1.5em;
+    }
+
 
 i#icon__footer.fa-solid.fa-map-location-dot {
     color: black;
@@ -338,7 +371,9 @@ ul.nav__seccion {
     display: none;
   }
 
- 
+p.footer {
+    font: $h2-font;
+}
  
 
 
@@ -379,19 +414,27 @@ ul.nav__seccion {
     
     }
 
-    img.cartoon {
-
-        height: 200px;
-        width: 300px;
-    }
-
+    section#sec__pilar {
+    
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2em;
+        
+        h2.preguntas__titulo {
+        font-size: 1.8em;   
+        margin: 5px;
+        }
+        img.cartoon {
+            width: 400px;
+        }    
+    
+        }
 
     #titulo {
         font-size: 2em;
         color: rgb(29, 4, 16);
         text-align: center;
-        margin-bottom: 30px;
-        padding-bottom: 20px;
+        
         
     }
 
@@ -419,7 +462,34 @@ ul.nav__seccion {
         
     }
 
-
-   
+    
+    
+    section#sec__ejercicios {
+    
+        margin-top: 20px;
+        padding: 10px;
+        font-size: 1.2em;
+        text-align: center;
+        ul {
+            text-align: start;
+        }
+        .referencias {
+            text-align: start;
+        }
+        span {
+            font-size: 1em;
+            text-align: justify;
+        }
+    
+    }    
+        img.image__ejercicios {
+        display: block;
+        border-radius: 10%;
+        margin: 0 auto;
+        
+        width: 380px;
+        height: 200px;
+        
+    }
     
 }
